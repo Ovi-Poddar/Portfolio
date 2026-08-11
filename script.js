@@ -58,7 +58,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.skill-category, .timeline-item, .publication-item, .research-item, .stat');
+    const animateElements = document.querySelectorAll('.skill-category, .publication-item, .research-item, .stat');
     animateElements.forEach(el => {
         observer.observe(el);
     });
@@ -191,23 +191,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Timeline animation on scroll
-const timelineItems = document.querySelectorAll('.timeline-item');
-const timelineObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+// Scroll reveal for sections and timeline entries.
+// Uses geometry rather than intersection ratios so that content taller than the
+// viewport still reveals, and re-checks on scroll/resize so nothing can stay hidden.
+const revealTargets = Array.from(document.querySelectorAll('section, .timeline-item'));
+
+revealTargets.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+});
+
+function updateReveals() {
+    const viewportHeight = window.innerHeight;
+    revealTargets.forEach(el => {
+        if (el.dataset.revealed === 'true') return;
+        const rect = el.getBoundingClientRect();
+        const hasEntered = rect.top < viewportHeight - 60 && rect.bottom > 0;
+        if (hasEntered) {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+            el.dataset.revealed = 'true';
         }
     });
-}, { threshold: 0.3 });
+}
 
-timelineItems.forEach(item => {
-    item.style.opacity = '0';
-    item.style.transform = 'translateY(30px)';
-    item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    timelineObserver.observe(item);
-});
+window.addEventListener('scroll', updateReveals, { passive: true });
+window.addEventListener('resize', updateReveals);
+window.addEventListener('load', updateReveals);
+updateReveals();
 
 // CV Download functionality
 function downloadCV() {
@@ -314,10 +326,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Add loading animation
-window.addEventListener('load', () => {
+// Add loading animation. DOMContentLoaded is included so a slow or failed asset
+// can never leave the page stuck at zero opacity.
+function showBody() {
     document.body.style.opacity = '1';
-});
+}
+
+document.addEventListener('DOMContentLoaded', showBody);
+window.addEventListener('load', showBody);
 
 // Set initial body opacity
 document.body.style.opacity = '0';
@@ -349,23 +365,7 @@ function createScrollProgress() {
 // Initialize scroll progress
 createScrollProgress();
 
-// Add smooth reveal animation for sections
-const revealElements = document.querySelectorAll('section');
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, { threshold: 0.1 });
-
-revealElements.forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(30px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    revealObserver.observe(section);
-});
+// Section reveals are handled by updateReveals() above.
 
 // Add keyboard navigation support
 document.addEventListener('keydown', (e) => {
