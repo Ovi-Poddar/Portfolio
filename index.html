@@ -104,7 +104,7 @@
           <h2 class="section-title">Technical Skills</h2>
           <div class="skills-grid">
       
-            <div class="skill-category">
+            <div class="skill-category skill-category--genai">
               <h3>Generative AI &amp; Agentic Systems</h3>
               <div class="skill-items">
                 <span class="skill-item">Prompt Engineering</span>
@@ -118,13 +118,14 @@
               </div>
             </div>
       
-            <div class="skill-category">
+            <div class="skill-category skill-category--tools">
               <h3>Agentic AI Frameworks &amp; Tools</h3>
               <div class="skill-items">
                 <span class="skill-item">OpenAI Agents SDK</span>
                 <span class="skill-item">LangChain</span>
                 <span class="skill-item">LangGraph</span>
                 <span class="skill-item">LangSmith</span>
+                <span class="skill-item">CrewAI</span>
                 <span class="skill-item">MCP</span>
                 <span class="skill-item">FAISS</span>
               </div>
@@ -292,191 +293,276 @@
         <div class="container">
             <h2 class="section-title">Projects</h2>
 
-            <h3 class="projects-subsection-title">AI / GenAI Projects</h3>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Agentic Chatbot — LangGraph Multi-Use AI Assistant</h3>
-                        <span class="project-year">2025</span>
+            <div class="projects-category projects-category--ai">
+                <div class="projects-category-header">
+                    <div class="projects-category-icon"><i class="fas fa-brain"></i></div>
+                    <div class="projects-category-text">
+                        <h3>AI / GenAI Projects</h3>
+                        <p>Agentic systems, RAG, MCP, and multi-agent workflows</p>
                     </div>
-                    <p class="project-description">
-                        Designed and implemented a stateful agentic workflow using <strong>LangGraph</strong>, with specialized nodes for conversational reasoning, web search, and news aggregation. Implemented state management, conditional routing, caching, retries, and tool integration to support reliable multi-step agent execution. Built with <strong>Streamlit</strong> for a unified interface and <strong>Tavily API</strong> for real-time search.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LangGraph</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">Groq LLMs</span>
-                        <span class="tech-tag">Tavily API</span>
-                        <span class="tech-tag">Stateful Agents</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Ovi-Poddar/Agentic-Chatbot" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
+                    <span class="projects-count">6</span>
                 </div>
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>InfoScope AI — RAG & News Intelligence</h3>
-                        <span class="project-year">2025</span>
-                    </div>
-                    <p class="project-description">
-                        Built a retrieval-augmented news intelligence system using <strong>OpenAI</strong>, <strong>LangChain</strong>, and <strong>FAISS</strong>. Users load article URLs or text files into a semantic index and ask context-aware questions with cited responses. Designed an end-to-end <strong>RAG pipeline</strong> with Streamlit UI for efficient research workflows.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">FAISS</span>
-                        <span class="tech-tag">OpenAI API</span>
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">Streamlit</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Ovi-Poddar/InfoScope-AI" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://youtu.be/XPfo9zgLo1s" class="project-link">
-                            <i class="fab fa-youtube"></i> YouTube
-                        </a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Weather Agent — Multi-Agent MCP System</h3>
-                        <span class="project-year">2025</span>
-                    </div>
-                    <p class="project-description">
-                        Developed a multi-agent system using <strong>Model Context Protocol (MCP)</strong> and <strong>Google Gemini</strong>, orchestrated with <strong>LangGraph</strong>. Built and connected custom MCP servers—Weather (Go) and Calculator (Python)—through Gemini's tool-use framework to answer weather and calculation queries via tool-augmented agent reasoning.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Go</span>
-                        <span class="tech-tag">LangGraph</span>
-                        <span class="tech-tag">MCP</span>
-                        <span class="tech-tag">Google Gemini</span>
-                        <span class="tech-tag">Tool Calling</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Ovi-Poddar/mcp-openweather" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Blog-Agentic — Multi-Agent Content Generation</h3>
-                        <span class="project-year">2025</span>
-                    </div>
-                    <p class="project-description">
-                        Designed a multi-stage agentic pipeline for automated blog generation. Specialized agents handle topic generation, web research, outline planning, and article drafting, coordinated by a central workflow controller for structured reasoning and modular content generation.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LLMs</span>
-                        <span class="tech-tag">Agentic AI</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">Multi-Agent</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Ovi-Poddar/Blog-Agentic" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://github.com/Ovi-Poddar/Blog-Agentic/blob/master/ARCHITECTURE.md" class="project-link" target="_blank">
-                            <i class="fas fa-sitemap"></i> Architecture
-                        </a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>AI-Enabled Personal Finance Management</h3>
-                        <span class="project-year">2025</span>
-                    </div>
-                    <p class="project-description">
-                        Developed an AI-assisted personal finance application that tracks expenses, analyzes spending patterns, and generates intelligent insights. Applies AI-driven analysis to provide personalized budgeting recommendations and expense optimization.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Data Analysis</span>
-                        <span class="tech-tag">Finance Analytics</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Ovi-Poddar/AI-Enable-Personal-Finance-Management-App-" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+                <div class="projects-showcase" data-showcase="ai">
+                    <nav class="projects-nav" aria-label="AI project navigation">
+                        <button type="button" class="project-nav-item active" data-target="ai-project-1">
+                            <span class="project-nav-title">Agentic Chatbot</span>
+                            <span class="project-nav-meta">LangGraph · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-2">
+                            <span class="project-nav-title">InfoScope AI</span>
+                            <span class="project-nav-meta">RAG · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-3">
+                            <span class="project-nav-title">Weather Agent</span>
+                            <span class="project-nav-meta">MCP · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-4">
+                            <span class="project-nav-title">Blog-Agentic</span>
+                            <span class="project-nav-meta">Multi-Agent · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-5">
+                            <span class="project-nav-title">Personal Finance AI</span>
+                            <span class="project-nav-meta">ML · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-6">
+                            <span class="project-nav-title">Agentic AI Labs</span>
+                            <span class="project-nav-meta">LangGraph · MCP · 2026</span>
+                        </button>
+                    </nav>
+                    <div class="projects-detail">
+                        <article class="project-detail-panel active" id="ai-project-1">
+                            <div class="project-detail-header">
+                                <h4>Agentic Chatbot — LangGraph Multi-Use AI Assistant</h4>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <p class="project-description">
+                                Designed and implemented a stateful agentic workflow using <strong>LangGraph</strong>, with specialized nodes for conversational reasoning, web search, and news aggregation. Implemented state management, conditional routing, caching, retries, and tool integration to support reliable multi-step agent execution. Built with <strong>Streamlit</strong> for a unified interface and <strong>Tavily API</strong> for real-time search.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangGraph</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">Groq LLMs</span>
+                                <span class="tech-tag">Tavily API</span>
+                                <span class="tech-tag">Stateful Agents</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/Agentic-Chatbot" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="ai-project-2">
+                            <div class="project-detail-header">
+                                <h4>InfoScope AI — RAG &amp; News Intelligence</h4>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <p class="project-description">
+                                Built a retrieval-augmented news intelligence system using <strong>OpenAI</strong>, <strong>LangChain</strong>, and <strong>FAISS</strong>. Users load article URLs or text files into a semantic index and ask context-aware questions with cited responses. Designed an end-to-end <strong>RAG pipeline</strong> with Streamlit UI for efficient research workflows.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">FAISS</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/InfoScope-AI" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://youtu.be/XPfo9zgLo1s" class="project-link">
+                                    <i class="fab fa-youtube"></i> YouTube
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="ai-project-3">
+                            <div class="project-detail-header">
+                                <h4>Weather Agent — Multi-Agent MCP System</h4>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <p class="project-description">
+                                Developed a multi-agent system using <strong>Model Context Protocol (MCP)</strong> and <strong>Google Gemini</strong>, orchestrated with <strong>LangGraph</strong>. Built and connected custom MCP servers—Weather (Go) and Calculator (Python)—through Gemini's tool-use framework to answer weather and calculation queries via tool-augmented agent reasoning.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Go</span>
+                                <span class="tech-tag">LangGraph</span>
+                                <span class="tech-tag">MCP</span>
+                                <span class="tech-tag">Google Gemini</span>
+                                <span class="tech-tag">Tool Calling</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/mcp-openweather" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="ai-project-4">
+                            <div class="project-detail-header">
+                                <h4>Blog-Agentic — Multi-Agent Content Generation</h4>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <p class="project-description">
+                                Designed a multi-stage agentic pipeline for automated blog generation. Specialized agents handle topic generation, web research, outline planning, and article drafting, coordinated by a central workflow controller for structured reasoning and modular content generation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LLMs</span>
+                                <span class="tech-tag">Agentic AI</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Multi-Agent</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/Blog-Agentic" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://github.com/Ovi-Poddar/Blog-Agentic/blob/master/ARCHITECTURE.md" class="project-link" target="_blank">
+                                    <i class="fas fa-sitemap"></i> Architecture
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="ai-project-5">
+                            <div class="project-detail-header">
+                                <h4>AI-Enabled Personal Finance Management</h4>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <p class="project-description">
+                                Developed an AI-assisted personal finance application that tracks expenses, analyzes spending patterns, and generates intelligent insights. Applies AI-driven analysis to provide personalized budgeting recommendations and expense optimization.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Finance Analytics</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/AI-Enable-Personal-Finance-Management-App-" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="ai-project-6">
+                            <div class="project-detail-header">
+                                <h4>Agentic AI Engineering Labs — LangGraph, MCP &amp; Multi-Agent Frameworks</h4>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-description">
+                                Completed structured hands-on labs covering <strong>OpenAI Agents SDK</strong>, <strong>LangChain/LangGraph</strong>, <strong>CrewAI</strong>, and <strong>Model Context Protocol (MCP)</strong>. Built and exercised agent workflows spanning foundations, tool integration, multi-agent orchestration, and custom MCP servers — complementing independent projects with breadth across modern agentic-AI frameworks.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangGraph</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">MCP</span>
+                                <span class="tech-tag">OpenAI Agents SDK</span>
+                                <span class="tech-tag">CrewAI</span>
+                                <span class="tech-tag">Multi-Agent</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/Udemy-AI-Engineer-Agentic-Track-The-Complete-Agent-MCP-Course" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
 
-            <h3 class="projects-subsection-title">Software Engineering Projects</h3>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Compass - Local Business Review Site</h3>
-                        <span class="project-year">2022</span>
+            <div class="projects-category projects-category--se">
+                <div class="projects-category-header">
+                    <div class="projects-category-icon"><i class="fas fa-code"></i></div>
+                    <div class="projects-category-text">
+                        <h3>Software Engineering Projects</h3>
+                        <p>Full-stack web applications and embedded systems</p>
                     </div>
-                    <p class="project-description">
-                        Full-stack MERN application where users can discover local businesses, 
-                        create business profiles, leave reviews, provide star ratings, and upload photos.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Express.js</span>
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Ovi-Poddar/compass" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
+                    <span class="projects-count">3</span>
                 </div>
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Social Shout - Social Media Platform</h3>
-                        <span class="project-year">2021</span>
-                    </div>
-                    <p class="project-description">
-                        Instagram-like social networking platform supporting account authentication, 
-                        photo sharing, following, likes, comments, notifications, and chat.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Oracle Database</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/rng70/Social-Shout" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3>Simple Alarm Clock - ATMEGA32 Interfaced with SD-Card Module</h3>
-                        <span class="project-year">2023</span>
-                    </div>
-                    <p class="project-description">
-                        Digital alarm clock system using ATMEGA32 microcontroller integrated with 
-                        an SD-Card module for data storage and real-time clock functionality.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C</span>
-                        <span class="tech-tag">Proteus</span>
-                        <span class="tech-tag">ATMEGA32</span>
-                        <span class="tech-tag">SD-Card Module</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Ovi-Poddar/CSE-316-Project-Alarm-Clock" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=e-2pCMw0GVE" class="project-link">
-                            <i class="fab fa-youtube"></i> YouTube
-                        </a>
+                <div class="projects-showcase" data-showcase="se">
+                    <nav class="projects-nav" aria-label="Software engineering project navigation">
+                        <button type="button" class="project-nav-item active" data-target="se-project-1">
+                            <span class="project-nav-title">Compass</span>
+                            <span class="project-nav-meta">MERN · 2022</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="se-project-2">
+                            <span class="project-nav-title">Social Shout</span>
+                            <span class="project-nav-meta">Django · 2021</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="se-project-3">
+                            <span class="project-nav-title">Alarm Clock</span>
+                            <span class="project-nav-meta">Embedded · 2023</span>
+                        </button>
+                    </nav>
+                    <div class="projects-detail">
+                        <article class="project-detail-panel active" id="se-project-1">
+                            <div class="project-detail-header">
+                                <h4>Compass - Local Business Review Site</h4>
+                                <span class="project-year">2022</span>
+                            </div>
+                            <p class="project-description">
+                                Full-stack MERN application where users can discover local businesses, 
+                                create business profiles, leave reviews, provide star ratings, and upload photos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/compass" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="se-project-2">
+                            <div class="project-detail-header">
+                                <h4>Social Shout - Social Media Platform</h4>
+                                <span class="project-year">2021</span>
+                            </div>
+                            <p class="project-description">
+                                Instagram-like social networking platform supporting account authentication, 
+                                photo sharing, following, likes, comments, notifications, and chat.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Oracle Database</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rng70/Social-Shout" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="se-project-3">
+                            <div class="project-detail-header">
+                                <h4>Simple Alarm Clock - ATMEGA32 Interfaced with SD-Card Module</h4>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <p class="project-description">
+                                Digital alarm clock system using ATMEGA32 microcontroller integrated with 
+                                an SD-Card module for data storage and real-time clock functionality.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Proteus</span>
+                                <span class="tech-tag">ATMEGA32</span>
+                                <span class="tech-tag">SD-Card Module</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/CSE-316-Project-Alarm-Clock" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=e-2pCMw0GVE" class="project-link">
+                                    <i class="fab fa-youtube"></i> YouTube
+                                </a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -493,6 +579,26 @@
     <div class="research-experience">
       <h3 class="research-section-title">Research Experience</h3>
       <div class="research-timeline">
+        <div class="research-timeline-item">
+          <div class="research-timeline-marker"></div>
+          <div class="research-timeline-content">
+            <h4>Towards Equitable AI in Pathology</h4>
+            <h5>Collaborative Research Project</h5>
+            <span class="research-timeline-date">March – May 2026</span>
+            <span class="research-status">Manuscript in Preparation — 2026</span>
+            <p>
+              Contributed to a collaborative systematic review of <strong>fairness and bias in AI-based histopathology imaging</strong>, following the <strong>PRISMA 2020</strong> framework and synthesizing evidence from <strong>78 studies</strong> published between 2017 and 2026.
+            </p>
+            <ul>
+              <li>Investigated <strong>bias sources, fairness evaluation practices, and debiasing approaches</strong> across histopathology AI, including demographic bias, tissue-source-site effects, dataset bias, and representation-related gaps</li>
+              <li>Contributed to an <strong>eight-category taxonomy of bias</strong> spanning demographic, institutional/batch, selection, technical, class/label, algorithmic, confounding, and representation-related biases</li>
+              <li>Contributed to a proposed <strong>histopathology-specific fairness reporting checklist and benchmark specification</strong> for whole-slide image multiple-instance learning models</li>
+              <li>Analyzed gaps in fairness reporting, demographic metadata availability, external validation, and reproducibility, including a structured audit of public datasets</li>
+              <li>Synthesized empirical evidence on <strong>debiasing methods and performance–fairness trade-offs</strong>, identifying methodological gaps for more reliable and equitable pathology AI</li>
+              <li>Co-authors: <a href="https://www.unsw.edu.au/staff/raktim-kumar-mondol" target="_blank" rel="noopener noreferrer">Dr Raktim Kumar Mondol</a> (UNSW), Shahana Akter</li>
+            </ul>
+          </div>
+        </div>
         <div class="research-timeline-item">
           <div class="research-timeline-marker"></div>
           <div class="research-timeline-content">
@@ -584,18 +690,19 @@
 
       <div class="research-item">
         <div class="research-icon"><i class="fas fa-shield-alt"></i></div>
-        <h3>Trustworthy AI</h3>
+        <h3>Trustworthy & Responsible AI</h3>
         <p>
-          Building <strong>reliable, privacy-aware, and resilient AI systems</strong>. 
-          Interests include <strong>agent reliability</strong>, 
-          <strong>adversarial robustness of LLMs</strong>, and 
-          <strong>security analytics for code and AI systems</strong>.
+          Building <strong>reliable, fair, and resilient AI systems</strong>. 
+          Interests include <strong>fairness and bias in AI</strong>, 
+          <strong>LLM/agent evaluation and reliability</strong>, 
+          <strong>adversarial robustness</strong>, and 
+          <strong>equitable deployment of AI in high-stakes domains</strong>.
         </p>
         <div class="research-tags">
           <span class="research-tag">Trustworthy AI</span>
-          <span class="research-tag">Agent Reliability</span>
-          <span class="research-tag">Adversarial Robustness</span>
-          <span class="research-tag">Security</span>
+          <span class="research-tag">Fairness & Bias</span>
+          <span class="research-tag">LLM Evaluation</span>
+          <span class="research-tag">Responsible AI</span>
         </div>
       </div>
 
@@ -698,7 +805,7 @@
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="https://scholar.google.com/citations?hl=en&user=NfRp450AAAAJ&view_op=list_works&gmla=APjjwuaCGRQZn7-0sZhC0P6h1ldqN0WXAK3712m2MTbwCIoWnO5iTSx_GDROh-wABEoyGWWyrA67zxTuiZW-MO78" class="social-link" title="Google Scholar" target="_blank">
-                            <img src="https://img.icons8.com/?size=100&id=KHBsYEIMZ6qt&format=png&color=FFFFFF" alt="Google Scholar" style="width: 28px; height: 28px;">
+                            <img src="https://img.icons8.com/?size=100&id=KHBsYEIMZ6qt&format=png&color=FFFFFF" alt="Google Scholar">
                         </a>
                         <a href="https://codeforces.com/profile/Jerry_Mouse" class="social-link" title="Codeforces">
                             <i class="fas fa-code"></i>
@@ -714,8 +821,14 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Ovi Poddar. All rights reserved.</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Ovi Poddar. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Ovi-Poddar" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ovi-poddar-45b9051a8/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=NfRp450AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a href="CV_Ovi_Poddar.pdf" download>CV</a>
+            </div>
         </div>
     </footer>
 

@@ -167,59 +167,60 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const rate = scrolled * -0.5;
-        hero.style.transform = `translateY(${rate}px)`;
-    }
-});
+// Active nav link on scroll
+const navSections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
 
-// Skill items hover effect
-document.addEventListener('DOMContentLoaded', () => {
-    const skillItems = document.querySelectorAll('.skill-item');
-    skillItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-3px) scale(1.05)';
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-});
+function updateActiveNav() {
+    const scrollPos = window.scrollY + 120;
+    let currentSection = 'home';
 
-// Scroll reveal for sections and timeline entries.
-// Uses geometry rather than intersection ratios so that content taller than the
-// viewport still reveals, and re-checks on scroll/resize so nothing can stay hidden.
-const revealTargets = Array.from(document.querySelectorAll('section, .timeline-item'));
-
-revealTargets.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-});
-
-function updateReveals() {
-    const viewportHeight = window.innerHeight;
-    revealTargets.forEach(el => {
-        if (el.dataset.revealed === 'true') return;
-        const rect = el.getBoundingClientRect();
-        const hasEntered = rect.top < viewportHeight - 60 && rect.bottom > 0;
-        if (hasEntered) {
-            el.style.opacity = '1';
-            el.style.transform = 'translateY(0)';
-            el.dataset.revealed = 'true';
+    navSections.forEach(section => {
+        if (scrollPos >= section.offsetTop) {
+            currentSection = section.getAttribute('id');
         }
+    });
+
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        link.classList.toggle('active', href === `#${currentSection}`);
     });
 }
 
-window.addEventListener('scroll', updateReveals, { passive: true });
-window.addEventListener('resize', updateReveals);
-window.addEventListener('load', updateReveals);
-updateReveals();
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+window.addEventListener('load', updateActiveNav);
+updateActiveNav();
+
+// Scroll reveal for major sections only (not nested timeline items)
+const revealTargets = Array.from(document.querySelectorAll('section'));
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!prefersReducedMotion) {
+    revealTargets.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+
+    function updateReveals() {
+        const viewportHeight = window.innerHeight;
+        revealTargets.forEach(el => {
+            if (el.dataset.revealed === 'true') return;
+            const rect = el.getBoundingClientRect();
+            const hasEntered = rect.top < viewportHeight - 60 && rect.bottom > 0;
+            if (hasEntered) {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+                el.dataset.revealed = 'true';
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateReveals, { passive: true });
+    window.addEventListener('resize', updateReveals);
+    window.addEventListener('load', updateReveals);
+    updateReveals();
+}
 
 // CV Download functionality
 function downloadCV() {
@@ -367,6 +368,25 @@ createScrollProgress();
 
 // Section reveals are handled by updateReveals() above.
 
+// Project showcase: master-detail panel switching
+document.querySelectorAll('.projects-showcase').forEach(showcase => {
+    const navItems = showcase.querySelectorAll('.project-nav-item');
+    const panels = showcase.querySelectorAll('.project-detail-panel');
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const targetId = item.dataset.target;
+            navItems.forEach(nav => nav.classList.remove('active'));
+            panels.forEach(panel => panel.classList.remove('active'));
+            item.classList.add('active');
+            const targetPanel = showcase.querySelector(`#${targetId}`);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+});
+
 // Add keyboard navigation support
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
@@ -376,18 +396,5 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Add focus management for accessibility
-document.addEventListener('DOMContentLoaded', () => {
-    const focusableElements = document.querySelectorAll('a, button, input, textarea, [tabindex]');
-    focusableElements.forEach(element => {
-        element.addEventListener('focus', function() {
-            this.style.outline = '2px solid #4f46e5';
-            this.style.outlineOffset = '2px';
-        });
-        
-        element.addEventListener('blur', function() {
-            this.style.outline = 'none';
-        });
-    });
-});
+// Focus styles are handled in CSS via :focus-visible
 
