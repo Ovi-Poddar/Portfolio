@@ -88,7 +88,7 @@ function showNotification(message, type = 'info') {
         position: fixed;
         top: 90px;
         right: 20px;
-        background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#4f46e5'};
+        background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#4338ca'};
         color: white;
         padding: 1rem 1.5rem;
         border-radius: 8px;
@@ -349,7 +349,7 @@ function createScrollProgress() {
         left: 0;
         width: 0%;
         height: 3px;
-        background: linear-gradient(90deg, #4f46e5, #7c3aed);
+        background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary-light));
         z-index: 10001;
         transition: width 0.1s ease;
     `;
