@@ -18,12 +18,10 @@
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
-                <a href="#publications" class="nav-link">Publications</a>
-                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#research" class="nav-link">Research</a>
-                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
@@ -98,95 +96,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-          <h2 class="section-title">Technical Skills</h2>
-          <div class="skills-grid">
-      
-            <div class="skill-category skill-category--genai">
-              <h3>Generative AI &amp; Agentic Systems</h3>
-              <div class="skill-items">
-                <span class="skill-item">Prompt Engineering</span>
-                <span class="skill-item">LLM Behavior Optimization</span>
-                <span class="skill-item">LLM Evaluation</span>
-                <span class="skill-item">Agent Configuration</span>
-                <span class="skill-item">RAG</span>
-                <span class="skill-item">Tool Calling</span>
-                <span class="skill-item">Multi-Agent Systems</span>
-                <span class="skill-item">Agent Orchestration</span>
-              </div>
-            </div>
-      
-            <div class="skill-category skill-category--tools">
-              <h3>Agentic AI Frameworks &amp; Tools</h3>
-              <div class="skill-items">
-                <span class="skill-item">OpenAI Agents SDK</span>
-                <span class="skill-item">LangChain</span>
-                <span class="skill-item">LangGraph</span>
-                <span class="skill-item">LangSmith</span>
-                <span class="skill-item">CrewAI</span>
-                <span class="skill-item">MCP</span>
-                <span class="skill-item">FAISS</span>
-              </div>
-            </div>
-      
-            <div class="skill-category">
-              <h3>AI / ML</h3>
-              <div class="skill-items">
-                <span class="skill-item">NLP</span>
-                <span class="skill-item">Machine Learning</span>
-                <span class="skill-item">Deep Learning</span>
-                <span class="skill-item">Scikit-learn</span>
-                <span class="skill-item">TensorFlow</span>
-                <span class="skill-item">NumPy</span>
-                <span class="skill-item">Pandas</span>
-              </div>
-            </div>
-      
-            <div class="skill-category">
-              <h3>Programming</h3>
-              <div class="skill-items">
-                <span class="skill-item">Python</span>
-                <span class="skill-item">C#</span>
-                <span class="skill-item">C++</span>
-                <span class="skill-item">Java</span>
-                <span class="skill-item">SQL</span>
-                <span class="skill-item">JavaScript</span>
-                <span class="skill-item">C</span>
-              </div>
-            </div>
-      
-            <div class="skill-category">
-              <h3>Software Engineering</h3>
-              <div class="skill-items">
-                <span class="skill-item">.NET Core / ASP.NET</span>
-                <span class="skill-item">Angular</span>
-                <span class="skill-item">Django</span>
-                <span class="skill-item">Entity Framework Core</span>
-                <span class="skill-item">MERN</span>
-              </div>
-            </div>
-      
-            <div class="skill-category">
-              <h3>Cloud / Data / DevOps</h3>
-              <div class="skill-items">
-                <span class="skill-item">AWS</span>
-                <span class="skill-item">PostgreSQL</span>
-                <span class="skill-item">MongoDB</span>
-                <span class="skill-item">MS SQL Server</span>
-                <span class="skill-item">Docker</span>
-                <span class="skill-item">Kubernetes</span>
-                <span class="skill-item">Git / GitHub</span>
-                <span class="skill-item">Linux</span>
-              </div>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      
-
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
@@ -248,10 +157,13 @@
         </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-          <h2 class="section-title">Publications</h2>
+    <!-- Research Section -->
+    <section id="research" class="research">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+
+        <div class="research-publications" id="publications">
+          <h3 class="research-section-title">Publications</h3>
           <div class="publications-grid">
             <div class="publication-item">
               <div class="publication-header">
@@ -259,9 +171,9 @@
                 <span class="publication-year">2023</span>
               </div>
               <p class="publication-description">
-                Proposed a deep learning–based framework that automatically classifies code review comments 
-                (e.g., bug reports, feature requests, improvement suggestions) to support large-scale software 
-                analytics. By combining natural language features with code context, the model significantly 
+                Proposed a deep learning–based framework that automatically classifies code review comments
+                (e.g., bug reports, feature requests, improvement suggestions) to support large-scale software
+                analytics. By combining natural language features with code context, the model significantly
                 outperformed existing baselines in classification accuracy and interpretability.
               </p>
               <div class="project-tech">
@@ -275,71 +187,203 @@
               </p>
               <p class="publication-venue">ESEM 2023 · July 7, 2023</p>
               <div class="publication-links">
-                <a href="https://arxiv.org/abs/2307.03852" class="publication-link" target="_blank">
+                <a href="https://arxiv.org/abs/2307.03852" class="publication-link" target="_blank" rel="noopener noreferrer">
                   <i class="fas fa-external-link-alt"></i> View Paper
                 </a>
-                <a href="https://arxiv.org/pdf/2307.03852" class="publication-link" target="_blank">
+                <a href="https://arxiv.org/pdf/2307.03852" class="publication-link" target="_blank" rel="noopener noreferrer">
                   <i class="fas fa-file-pdf"></i> PDF
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      
+
+        <div class="research-experience">
+          <h3 class="research-section-title">Research Experience</h3>
+          <div class="research-timeline">
+            <div class="research-timeline-item">
+              <div class="research-timeline-marker"></div>
+              <div class="research-timeline-content">
+                <h4>Towards Equitable AI in Pathology</h4>
+                <h5>Collaborative Research Project</h5>
+                <span class="research-timeline-date">March – May 2026</span>
+                <span class="research-status">Manuscript in Preparation — 2026</span>
+                <p>
+                  Contributed to a collaborative systematic review of <strong>fairness and bias in AI-based histopathology imaging</strong>, following the <strong>PRISMA 2020</strong> framework and synthesizing evidence from <strong>78 studies</strong> published between 2017 and 2026.
+                </p>
+                <ul>
+                  <li>Investigated <strong>bias sources, fairness evaluation practices, and debiasing approaches</strong> across histopathology AI, including demographic bias, tissue-source-site effects, dataset bias, and representation-related gaps</li>
+                  <li>Contributed to an <strong>eight-category taxonomy of bias</strong> spanning demographic, institutional/batch, selection, technical, class/label, algorithmic, confounding, and representation-related biases</li>
+                  <li>Contributed to a proposed <strong>histopathology-specific fairness reporting checklist and benchmark specification</strong> for whole-slide image multiple-instance learning models</li>
+                  <li>Analyzed gaps in fairness reporting, demographic metadata availability, external validation, and reproducibility, including a structured audit of public datasets</li>
+                  <li>Synthesized empirical evidence on <strong>debiasing methods and performance–fairness trade-offs</strong>, identifying methodological gaps for more reliable and equitable pathology AI</li>
+                  <li>Co-authors: <a href="https://www.unsw.edu.au/staff/raktim-kumar-mondol" target="_blank" rel="noopener noreferrer">Dr Raktim Kumar Mondol</a> (UNSW), Shahana Akter</li>
+                </ul>
+              </div>
+            </div>
+            <div class="research-timeline-item">
+              <div class="research-timeline-marker"></div>
+              <div class="research-timeline-content">
+                <h4>Undergraduate Research Work</h4>
+                <h5>Bangladesh University of Engineering and Technology (BUET)</h5>
+                <span class="research-timeline-date">February 2022 – April 2023</span>
+                <p>
+                  Conducted research on deep learning–based classification of code review comments by combining
+                  <strong>natural language and code representations</strong>. Proposed hybrid features using
+                  <strong>CodeBERT embeddings</strong> and <strong>AST / change-based metrics</strong>, achieving
+                  significantly higher classification accuracy over baseline models.
+                </p>
+                <ul>
+                  <li>Supervisor: <a href="https://cse.buet.ac.bd/faculty/faculty_detail/anindyaiqbal" target="_blank">Dr. Anindya Iqbal</a></li>
+                  <li>Applied <strong>machine learning and NLP</strong> to software engineering analytics</li>
+                  <li>Published at <strong>ESEM 2023</strong> (Empirical Software Engineering and Measurement Conference)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="research-section-title">Research Interests</h3>
+        <div class="research-grid">
+          <div class="research-item">
+            <div class="research-icon"><i class="fas fa-robot"></i></div>
+            <h3>Agentic AI & LLM Systems</h3>
+            <p>
+              Research interests include <strong>LLM agents, multi-agent systems, tool-augmented reasoning, LLM evaluation, agent reliability, and domain-constrained AI systems</strong>. Focused on building agents that behave consistently under real-world constraints.
+            </p>
+            <div class="research-tags">
+              <span class="research-tag">Agentic AI</span>
+              <span class="research-tag">Multi-Agent Systems</span>
+              <span class="research-tag">LLM Evaluation</span>
+              <span class="research-tag">Tool Calling</span>
+            </div>
+          </div>
+          <div class="research-item">
+            <div class="research-icon"><i class="fas fa-language"></i></div>
+            <h3>Natural Language Processing & Large Language Models</h3>
+            <p>
+              Exploring how <strong>LLMs and transformer architectures</strong> understand and generate
+              source code, documentation, and developer intent. Focus on
+              <strong>semantics-aware modeling</strong>, <strong>representation learning</strong>, and
+              <strong>explainable reasoning</strong> to bridge human language and program logic.
+            </p>
+            <div class="research-tags">
+              <span class="research-tag">NLP</span>
+              <span class="research-tag">LLMs</span>
+              <span class="research-tag">Representation Learning</span>
+              <span class="research-tag">Explainable AI</span>
+            </div>
+          </div>
+          <div class="research-item">
+            <div class="research-icon"><i class="fas fa-code"></i></div>
+            <h3>Program Analysis & Intelligent Software Engineering</h3>
+            <p>
+              Integrating <strong>static / dynamic program analysis</strong> with learning-based methods
+              to automate code understanding, defect localization, and developer assistance.
+              Aim to design <strong>semantics-guided ML systems</strong> that improve reliability and maintainability.
+            </p>
+            <div class="research-tags">
+              <span class="research-tag">Program Analysis</span>
+              <span class="research-tag">Software Engineering</span>
+              <span class="research-tag">Code Understanding</span>
+              <span class="research-tag">Automated Verification</span>
+            </div>
+          </div>
+          <div class="research-item">
+            <div class="research-icon"><i class="fas fa-bug"></i></div>
+            <h3>Software Testing & Debugging</h3>
+            <p>
+              Developing scalable, data-driven techniques for <strong>testing and debugging</strong>
+              AI-enabled systems. Interested in leveraging <strong>LLMs</strong> for fault explanation,
+              test generation, and automated repair.
+            </p>
+            <div class="research-tags">
+              <span class="research-tag">Testing</span>
+              <span class="research-tag">Debugging</span>
+              <span class="research-tag">LLMs</span>
+              <span class="research-tag">Automation</span>
+            </div>
+          </div>
+          <div class="research-item">
+            <div class="research-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Trustworthy & Responsible AI</h3>
+            <p>
+              Building <strong>reliable, fair, and resilient AI systems</strong>.
+              Interests include <strong>fairness and bias in AI</strong>,
+              <strong>LLM/agent evaluation and reliability</strong>,
+              <strong>adversarial robustness</strong>, and
+              <strong>equitable deployment of AI in high-stakes domains</strong>.
+            </p>
+            <div class="research-tags">
+              <span class="research-tag">Trustworthy AI</span>
+              <span class="research-tag">Fairness & Bias</span>
+              <span class="research-tag">LLM Evaluation</span>
+              <span class="research-tag">Responsible AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
 
-            <div class="projects-category projects-category--ai">
+            <div class="projects-category projects-category--learning">
                 <div class="projects-category-header">
-                    <div class="projects-category-icon"><i class="fas fa-brain"></i></div>
+                    <div class="projects-category-icon"><i class="fas fa-flask"></i></div>
                     <div class="projects-category-text">
-                        <h3>AI / GenAI Projects</h3>
-                        <p>Agentic systems, RAG, MCP, and multi-agent workflows</p>
+                        <h3>Technical Learning &amp; Experiments</h3>
+                        <p>Structured implementation work — weekly labs across LLM engineering and agentic systems</p>
                     </div>
-                    <span class="projects-count">6</span>
+                    <span class="projects-count">2</span>
                 </div>
-                <div class="projects-showcase" data-showcase="ai">
-                    <nav class="projects-nav" aria-label="AI project navigation">
-                        <button type="button" class="project-nav-item active" data-target="ai-project-1">
+                <div class="projects-showcase" data-showcase="learning">
+                    <nav class="projects-nav" aria-label="Technical learning navigation">
+                        <button type="button" class="project-nav-item active" data-target="learning-project-1">
+                            <span class="project-nav-title">LLM Engineering Track</span>
+                            <span class="project-nav-meta">RAG · Fine-tuning · 2026</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="learning-project-2">
                             <span class="project-nav-title">Agentic AI Labs</span>
                             <span class="project-nav-meta">LangGraph · MCP · 2026</span>
                         </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-2">
-                            <span class="project-nav-title">Agentic Chatbot</span>
-                            <span class="project-nav-meta">LangGraph · 2025</span>
-                        </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-3">
-                            <span class="project-nav-title">InfoScope AI</span>
-                            <span class="project-nav-meta">RAG · 2025</span>
-                        </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-4">
-                            <span class="project-nav-title">Weather Agent</span>
-                            <span class="project-nav-meta">MCP · 2025</span>
-                        </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-5">
-                            <span class="project-nav-title">Blog-Agentic</span>
-                            <span class="project-nav-meta">Multi-Agent · 2025</span>
-                        </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-6">
-                            <span class="project-nav-title">Personal Finance AI</span>
-                            <span class="project-nav-meta">ML · 2025</span>
-                        </button>
                     </nav>
                     <div class="projects-detail">
-                        <article class="project-detail-panel active" id="ai-project-1">
+                        <article class="project-detail-panel active" id="learning-project-1">
+                            <div class="project-detail-header">
+                                <h4>LLM Engineering — Core AI Engineer Track</h4>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-description">
+                                An implementation-focused eight-week exploration of modern LLM engineering — from LLM applications and multi-model systems through Hugging Face/Transformers, RAG, vector databases, fine-tuning (LoRA/QLoRA), deployment, and agentic AI. Repository organized by week for inspectable, hands-on progress.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">LLM Applications</span>
+                                <span class="tech-tag">Hugging Face</span>
+                                <span class="tech-tag">Transformers</span>
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">Vector Databases</span>
+                                <span class="tech-tag">Fine-tuning</span>
+                                <span class="tech-tag">LoRA / QLoRA</span>
+                                <span class="tech-tag">Model Deployment</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/Udemy-AI-Engineer-Core-Track-LLM-Engineering-RAG-QLoRA-Agents" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="learning-project-2">
                             <div class="project-detail-header">
                                 <h4>Agentic AI Engineering Labs — LangGraph, MCP &amp; Multi-Agent Frameworks</h4>
                                 <span class="project-year">2026</span>
                             </div>
                             <p class="project-description">
-                                Completed structured hands-on labs covering <strong>OpenAI Agents SDK</strong>, <strong>LangChain/LangGraph</strong>, <strong>CrewAI</strong>, and <strong>Model Context Protocol (MCP)</strong>. Built and exercised agent workflows spanning foundations, tool integration, multi-agent orchestration, and custom MCP servers — complementing independent projects with breadth across modern agentic-AI frameworks.
+                                Structured labs covering OpenAI Agents SDK, LangChain/LangGraph, CrewAI, and Model Context Protocol (MCP). Built and exercised agent workflows spanning foundations, tool integration, multi-agent orchestration, and custom MCP servers.
                             </p>
                             <div class="project-tech">
-                                <span class="tech-tag">Python</span>
                                 <span class="tech-tag">LangGraph</span>
                                 <span class="tech-tag">LangChain</span>
                                 <span class="tech-tag">MCP</span>
@@ -353,7 +397,44 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-category projects-category--ai">
+                <div class="projects-category-header">
+                    <div class="projects-category-icon"><i class="fas fa-brain"></i></div>
+                    <div class="projects-category-text">
+                        <h3>AI / GenAI Projects</h3>
+                        <p>Agentic systems, RAG, MCP, and multi-agent workflows</p>
+                    </div>
+                    <span class="projects-count">5</span>
+                </div>
+                <div class="projects-showcase" data-showcase="ai">
+                    <nav class="projects-nav" aria-label="AI project navigation">
+                        <button type="button" class="project-nav-item active" data-target="ai-project-1">
+                            <span class="project-nav-title">Agentic Chatbot</span>
+                            <span class="project-nav-meta">LangGraph · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-2">
+                            <span class="project-nav-title">InfoScope AI</span>
+                            <span class="project-nav-meta">RAG · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-3">
+                            <span class="project-nav-title">Weather Agent</span>
+                            <span class="project-nav-meta">MCP · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-4">
+                            <span class="project-nav-title">Blog-Agentic</span>
+                            <span class="project-nav-meta">Multi-Agent · 2025</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-5">
+                            <span class="project-nav-title">Personal Finance AI</span>
+                            <span class="project-nav-meta">ML · 2025</span>
+                        </button>
+                    </nav>
+                    <div class="projects-detail">
+                        <article class="project-detail-panel active" id="ai-project-1">
                             <div class="project-detail-header">
                                 <h4>Agentic Chatbot — LangGraph Multi-Use AI Assistant</h4>
                                 <span class="project-year">2025</span>
@@ -375,7 +456,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-3">
+                        <article class="project-detail-panel" id="ai-project-2">
                             <div class="project-detail-header">
                                 <h4>InfoScope AI — RAG &amp; News Intelligence</h4>
                                 <span class="project-year">2025</span>
@@ -400,7 +481,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-4">
+                        <article class="project-detail-panel" id="ai-project-3">
                             <div class="project-detail-header">
                                 <h4>Weather Agent — Multi-Agent MCP System</h4>
                                 <span class="project-year">2025</span>
@@ -422,7 +503,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-5">
+                        <article class="project-detail-panel" id="ai-project-4">
                             <div class="project-detail-header">
                                 <h4>Blog-Agentic — Multi-Agent Content Generation</h4>
                                 <span class="project-year">2025</span>
@@ -446,7 +527,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-6">
+                        <article class="project-detail-panel" id="ai-project-5">
                             <div class="project-detail-header">
                                 <h4>AI-Enabled Personal Finance Management</h4>
                                 <span class="project-year">2025</span>
@@ -569,147 +650,91 @@
         </div>
      </section>
 
-     <!-- Research Interests Section -->
-<!-- Research Interests Section -->
-<section id="research" class="research">
-  <div class="container">
-    <h2 class="section-title">Research Experience & Interests</h2>
+     <!-- Skills Section -->
+     <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="skills-grid">
 
-    <!-- Research Experience -->
-    <div class="research-experience">
-      <h3 class="research-section-title">Research Experience</h3>
-      <div class="research-timeline">
-        <div class="research-timeline-item">
-          <div class="research-timeline-marker"></div>
-          <div class="research-timeline-content">
-            <h4>Towards Equitable AI in Pathology</h4>
-            <h5>Collaborative Research Project</h5>
-            <span class="research-timeline-date">March – May 2026</span>
-            <span class="research-status">Manuscript in Preparation — 2026</span>
-            <p>
-              Contributed to a collaborative systematic review of <strong>fairness and bias in AI-based histopathology imaging</strong>, following the <strong>PRISMA 2020</strong> framework and synthesizing evidence from <strong>78 studies</strong> published between 2017 and 2026.
-            </p>
-            <ul>
-              <li>Investigated <strong>bias sources, fairness evaluation practices, and debiasing approaches</strong> across histopathology AI, including demographic bias, tissue-source-site effects, dataset bias, and representation-related gaps</li>
-              <li>Contributed to an <strong>eight-category taxonomy of bias</strong> spanning demographic, institutional/batch, selection, technical, class/label, algorithmic, confounding, and representation-related biases</li>
-              <li>Contributed to a proposed <strong>histopathology-specific fairness reporting checklist and benchmark specification</strong> for whole-slide image multiple-instance learning models</li>
-              <li>Analyzed gaps in fairness reporting, demographic metadata availability, external validation, and reproducibility, including a structured audit of public datasets</li>
-              <li>Synthesized empirical evidence on <strong>debiasing methods and performance–fairness trade-offs</strong>, identifying methodological gaps for more reliable and equitable pathology AI</li>
-              <li>Co-authors: <a href="https://www.unsw.edu.au/staff/raktim-kumar-mondol" target="_blank" rel="noopener noreferrer">Dr Raktim Kumar Mondol</a> (UNSW), Shahana Akter</li>
-            </ul>
+            <div class="skill-category skill-category--genai">
+              <h3>Generative AI &amp; Agentic Systems</h3>
+              <div class="skill-items">
+                <span class="skill-item">Prompt Engineering</span>
+                <span class="skill-item">LLM Behavior Optimization</span>
+                <span class="skill-item">LLM Evaluation</span>
+                <span class="skill-item">RAG</span>
+                <span class="skill-item">Tool Calling</span>
+                <span class="skill-item">Multi-Agent Systems</span>
+                <span class="skill-item">Agent Orchestration</span>
+              </div>
+            </div>
+
+            <div class="skill-category skill-category--llm">
+              <h3>LLM Engineering</h3>
+              <div class="skill-items">
+                <span class="skill-item">OpenAI APIs</span>
+                <span class="skill-item">Hugging Face</span>
+                <span class="skill-item">Transformers</span>
+                <span class="skill-item">Embeddings</span>
+                <span class="skill-item">Vector Databases</span>
+                <span class="skill-item">Fine-tuning</span>
+                <span class="skill-item">PEFT</span>
+                <span class="skill-item">LoRA / QLoRA</span>
+              </div>
+            </div>
+
+            <div class="skill-category skill-category--tools">
+              <h3>Agentic AI Frameworks &amp; Tools</h3>
+              <div class="skill-items">
+                <span class="skill-item">OpenAI Agents SDK</span>
+                <span class="skill-item">LangChain</span>
+                <span class="skill-item">LangGraph</span>
+                <span class="skill-item">LangSmith</span>
+                <span class="skill-item">MCP</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>AI / Machine Learning</h3>
+              <div class="skill-items">
+                <span class="skill-item">NLP</span>
+                <span class="skill-item">Machine Learning</span>
+                <span class="skill-item">Deep Learning</span>
+                <span class="skill-item">Scikit-learn</span>
+                <span class="skill-item">TensorFlow</span>
+                <span class="skill-item">NumPy</span>
+                <span class="skill-item">Pandas</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Software Engineering</h3>
+              <div class="skill-items">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">C#</span>
+                <span class="skill-item">.NET Core / ASP.NET</span>
+                <span class="skill-item">Angular</span>
+                <span class="skill-item">Django</span>
+                <span class="skill-item">Entity Framework Core</span>
+                <span class="skill-item">SQL</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Cloud &amp; Infrastructure</h3>
+              <div class="skill-items">
+                <span class="skill-item">AWS</span>
+                <span class="skill-item">PostgreSQL</span>
+                <span class="skill-item">MongoDB</span>
+                <span class="skill-item">Docker</span>
+                <span class="skill-item">Git</span>
+                <span class="skill-item">Linux</span>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div class="research-timeline-item">
-          <div class="research-timeline-marker"></div>
-          <div class="research-timeline-content">
-            <h4>Undergraduate Research Work</h4>
-            <h5>Bangladesh University of Engineering and Technology (BUET)</h5>
-            <span class="research-timeline-date">February 2022 – April 2023</span>
-            <p>
-              Conducted research on deep learning–based classification of code review comments by combining 
-              <strong>natural language and code representations</strong>. Proposed hybrid features using 
-              <strong>CodeBERT embeddings</strong> and <strong>AST / change-based metrics</strong>, achieving 
-              significantly higher classification accuracy over baseline models.
-            </p>
-            <ul>
-              <li>Supervisor: <a href="https://cse.buet.ac.bd/faculty/faculty_detail/anindyaiqbal" target="_blank">Dr. Anindya Iqbal</a></li>
-              <li>Applied <strong>machine learning and NLP</strong> to software engineering analytics</li>
-              <li>Published at <strong>ESEM 2023</strong> (Empirical Software Engineering and Measurement Conference)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Research Interests -->
-    <h3 class="research-section-title">Research Interests</h3>
-    <div class="research-grid">
-
-      <div class="research-item">
-        <div class="research-icon"><i class="fas fa-robot"></i></div>
-        <h3>Agentic AI & LLM Systems</h3>
-        <p>
-          Research interests include <strong>LLM agents, multi-agent systems, tool-augmented reasoning, LLM evaluation, agent reliability, and domain-constrained AI systems</strong>. Focused on building agents that behave consistently under real-world constraints.
-        </p>
-        <div class="research-tags">
-          <span class="research-tag">Agentic AI</span>
-          <span class="research-tag">Multi-Agent Systems</span>
-          <span class="research-tag">LLM Evaluation</span>
-          <span class="research-tag">Tool Calling</span>
-        </div>
-      </div>
-
-      <div class="research-item">
-        <div class="research-icon"><i class="fas fa-language"></i></div>
-        <h3>Natural Language Processing & Large Language Models</h3>
-        <p>
-          Exploring how <strong>LLMs and transformer architectures</strong> understand and generate 
-          source code, documentation, and developer intent. Focus on 
-          <strong>semantics-aware modeling</strong>, <strong>representation learning</strong>, and 
-          <strong>explainable reasoning</strong> to bridge human language and program logic.
-        </p>
-        <div class="research-tags">
-          <span class="research-tag">NLP</span>
-          <span class="research-tag">LLMs</span>
-          <span class="research-tag">Representation Learning</span>
-          <span class="research-tag">Explainable AI</span>
-        </div>
-      </div>
-
-      <div class="research-item">
-        <div class="research-icon"><i class="fas fa-code"></i></div>
-        <h3>Program Analysis & Intelligent Software Engineering</h3>
-        <p>
-          Integrating <strong>static / dynamic program analysis</strong> with learning-based methods 
-          to automate code understanding, defect localization, and developer assistance. 
-          Aim to design <strong>semantics-guided ML systems</strong> that improve reliability and maintainability.
-        </p>
-        <div class="research-tags">
-          <span class="research-tag">Program Analysis</span>
-          <span class="research-tag">Software Engineering</span>
-          <span class="research-tag">Code Understanding</span>
-          <span class="research-tag">Automated Verification</span>
-        </div>
-      </div>
-
-      <div class="research-item">
-        <div class="research-icon"><i class="fas fa-bug"></i></div>
-        <h3>Software Testing & Debugging</h3>
-        <p>
-          Developing scalable, data-driven techniques for <strong>testing and debugging</strong> 
-          AI-enabled systems. Interested in leveraging <strong>LLMs</strong> for fault explanation, 
-          test generation, and automated repair.
-        </p>
-        <div class="research-tags">
-          <span class="research-tag">Testing</span>
-          <span class="research-tag">Debugging</span>
-          <span class="research-tag">LLMs</span>
-          <span class="research-tag">Automation</span>
-        </div>
-      </div>
-
-      <div class="research-item">
-        <div class="research-icon"><i class="fas fa-shield-alt"></i></div>
-        <h3>Trustworthy & Responsible AI</h3>
-        <p>
-          Building <strong>reliable, fair, and resilient AI systems</strong>. 
-          Interests include <strong>fairness and bias in AI</strong>, 
-          <strong>LLM/agent evaluation and reliability</strong>, 
-          <strong>adversarial robustness</strong>, and 
-          <strong>equitable deployment of AI in high-stakes domains</strong>.
-        </p>
-        <div class="research-tags">
-          <span class="research-tag">Trustworthy AI</span>
-          <span class="research-tag">Fairness & Bias</span>
-          <span class="research-tag">LLM Evaluation</span>
-          <span class="research-tag">Responsible AI</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+      </section>
 
      <!-- Achievements Section -->
      <section id="achievements" class="achievements">

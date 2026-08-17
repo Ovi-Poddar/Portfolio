@@ -394,6 +394,22 @@ section {
     border-top: 3px solid var(--color-accent);
 }
 
+.skill-category--llm {
+    border-top: 3px solid #7c3aed;
+}
+
+.skill-category--llm .skill-item {
+    background: #f5f3ff;
+    color: #6d28d9;
+    border: 1px solid #ddd6fe;
+}
+
+.skill-category--llm .skill-item:hover {
+    background: #7c3aed;
+    color: white;
+    border-color: #7c3aed;
+}
+
 .skill-items {
     display: flex;
     flex-wrap: wrap;
@@ -435,8 +451,12 @@ section {
     border-color: var(--color-primary);
 }
 
-.skill-category:not(.skill-category--genai):not(.skill-category--tools) .skill-item:hover {
+.skill-category:not(.skill-category--genai):not(.skill-category--tools):not(.skill-category--llm) .skill-item:hover {
     background: #e5e7eb;
+}
+
+.research-publications {
+    margin-bottom: 3rem;
 }
 
 /* Experience Section */
@@ -910,6 +930,40 @@ section {
 
 .projects-category--se .project-link:hover {
     background: #0d9488;
+    color: white;
+}
+
+.projects-category--learning .projects-category-header {
+    border-left-color: #7c3aed;
+}
+
+.projects-category--learning .projects-category-icon {
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+}
+
+.projects-category--learning .projects-count {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.projects-category--learning .project-nav-item.active {
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    border-color: #7c3aed;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+}
+
+.projects-category--learning .project-year {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.projects-category--learning .project-link {
+    color: #7c3aed;
+    border-color: #7c3aed;
+}
+
+.projects-category--learning .project-link:hover {
+    background: #7c3aed;
     color: white;
 }
 
@@ -1471,6 +1525,11 @@ section {
 
     .projects-category-text h3 {
         font-size: 1.25rem;
+    }
+
+    .llm-dev-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
