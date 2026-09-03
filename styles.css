@@ -884,6 +884,26 @@ section {
     font-size: 1rem;
 }
 
+.project-capstone-label {
+    margin: -0.75rem 0 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-muted);
+    font-style: italic;
+}
+
+.project-highlights {
+    margin: -0.5rem 0 1.25rem;
+    padding-left: 1.25rem;
+    color: #4b5563;
+}
+
+.project-highlights li {
+    margin-bottom: 0.5rem;
+    line-height: 1.65;
+    font-size: 0.95rem;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;

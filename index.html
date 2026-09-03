@@ -406,35 +406,70 @@
                     <div class="projects-category-icon"><i class="fas fa-brain"></i></div>
                     <div class="projects-category-text">
                         <h3>AI / GenAI Projects</h3>
-                        <p>Agentic systems, RAG, MCP, and multi-agent workflows</p>
+                        <p>ML/LLM engineering, agentic systems, RAG, and multi-agent workflows</p>
                     </div>
-                    <span class="projects-count">5</span>
+                    <span class="projects-count">6</span>
                 </div>
                 <div class="projects-showcase" data-showcase="ai">
                     <nav class="projects-nav" aria-label="AI project navigation">
                         <button type="button" class="project-nav-item active" data-target="ai-project-1">
+                            <span class="project-nav-title">Amazon Price Prediction</span>
+                            <span class="project-nav-meta">LLM Engineering Capstone · 2026</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="ai-project-2">
                             <span class="project-nav-title">Agentic Chatbot</span>
                             <span class="project-nav-meta">LangGraph · 2025</span>
                         </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-2">
+                        <button type="button" class="project-nav-item" data-target="ai-project-3">
                             <span class="project-nav-title">InfoScope AI</span>
                             <span class="project-nav-meta">RAG · 2025</span>
                         </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-3">
+                        <button type="button" class="project-nav-item" data-target="ai-project-4">
                             <span class="project-nav-title">Weather Agent</span>
                             <span class="project-nav-meta">MCP · 2025</span>
                         </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-4">
+                        <button type="button" class="project-nav-item" data-target="ai-project-5">
                             <span class="project-nav-title">Blog-Agentic</span>
                             <span class="project-nav-meta">Multi-Agent · 2025</span>
                         </button>
-                        <button type="button" class="project-nav-item" data-target="ai-project-5">
+                        <button type="button" class="project-nav-item" data-target="ai-project-6">
                             <span class="project-nav-title">Personal Finance AI</span>
                             <span class="project-nav-meta">ML · 2025</span>
                         </button>
                     </nav>
                     <div class="projects-detail">
                         <article class="project-detail-panel active" id="ai-project-1">
+                            <div class="project-detail-header">
+                                <h4>Amazon Product Price Prediction — LLM &amp; ML Engineering</h4>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-capstone-label">LLM Engineering Capstone · 2026</p>
+                            <p class="project-description">
+                                Built an end-to-end <strong>text-to-price prediction pipeline</strong> from Amazon product metadata — data curation and LLM-assisted preprocessing through classical NLP/ML baselines, deep learning, frontier LLM benchmarking, and parameter-efficient fine-tuning. Evaluated 15+ approaches across the full modeling lifecycle. <strong>QLoRA-tuned Llama 3.2 3B achieved the best MAE ($39.85)</strong> among the evaluated approaches.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Curated and preprocessed noisy Amazon product metadata from the <strong>McAuley Amazon Reviews 2023</strong> dataset into model-ready text representations.</li>
+                                <li>Used the <strong>Groq API</strong> to transform raw listings into compact structured descriptions; prepared a <strong>20K-sample curated dataset</strong> (up to <strong>800K</strong> in later experiments).</li>
+                                <li>Established NLP/ML baselines with <strong>Bag-of-Words / vectorization</strong> and Linear Regression, Random Forest, and XGBoost (<strong>$68.23 MAE</strong>).</li>
+                                <li>Built a custom <strong>PyTorch</strong> network over vectorized features (<strong>$46.49 MAE</strong>) and benchmarked zero-shot frontier LLMs on the same task.</li>
+                                <li>Fine-tuned <strong>GPT-4.1-nano</strong> via the OpenAI API and compared against zero-shot baselines, including cases where fine-tuning did not improve performance for the available training setup.</li>
+                                <li>Fine-tuned <strong>Llama 3.2 3B with QLoRA/PEFT and 4-bit quantization</strong>; achieved the lowest MAE (<strong>$39.85</strong>) among evaluated classical ML, neural, and LLM-based approaches.</li>
+                                <li>Developed a reusable evaluation framework with <strong>parallel inference, MAE benchmarking, Plotly visualization, and error analysis</strong> across 15+ model variants.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">XGBoost</span>
+                                <span class="tech-tag">Hugging Face</span>
+                                <span class="tech-tag">QLoRA</span>
+                                <span class="tech-tag">PEFT</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">Groq API</span>
+                                <span class="tech-tag">LLM Evaluation</span>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="ai-project-2">
                             <div class="project-detail-header">
                                 <h4>Agentic Chatbot — LangGraph Multi-Use AI Assistant</h4>
                                 <span class="project-year">2025</span>
@@ -456,7 +491,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-2">
+                        <article class="project-detail-panel" id="ai-project-3">
                             <div class="project-detail-header">
                                 <h4>InfoScope AI — RAG &amp; News Intelligence</h4>
                                 <span class="project-year">2025</span>
@@ -481,7 +516,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-3">
+                        <article class="project-detail-panel" id="ai-project-4">
                             <div class="project-detail-header">
                                 <h4>Weather Agent — Multi-Agent MCP System</h4>
                                 <span class="project-year">2025</span>
@@ -503,7 +538,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-4">
+                        <article class="project-detail-panel" id="ai-project-5">
                             <div class="project-detail-header">
                                 <h4>Blog-Agentic — Multi-Agent Content Generation</h4>
                                 <span class="project-year">2025</span>
@@ -527,7 +562,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="project-detail-panel" id="ai-project-5">
+                        <article class="project-detail-panel" id="ai-project-6">
                             <div class="project-detail-header">
                                 <h4>AI-Enabled Personal Finance Management</h4>
                                 <span class="project-year">2025</span>
