@@ -3,59 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ovi Poddar - Software Engineer Portfolio</title>
+    <title>Ovi Poddar | AI Engineering &amp; Applied Research</title>
+    <meta name="description" content="Ovi Poddar's work in applied LLMs, agentic systems, NLP, and trustworthy AI. Explore research, engineering projects, and open-source contributions with linked evidence.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">Ovi Poddar</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#contributions" class="nav-link">Contributions</a>
                 <a href="#research" class="nav-link">Research</a>
                 <a href="#projects" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-controls="nav-menu" aria-expanded="false" hidden>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
+    <main id="main-content" tabindex="-1">
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Ovi Poddar</span></h1>
-                <h2 class="hero-subtitle">Software Engineer • Generative AI &amp; Agentic Systems • Prompt Engineering &amp; Agent Behavior Optimization</h2>
+                <p class="eyebrow">Ovi Poddar / Software engineer</p>
+                <h1 class="hero-title">Building reliable AI.<br><span class="highlight">Testing what matters.</span></h1>
+                <p class="hero-subtitle">Applied LLMs, agentic systems &amp; trustworthy AI.</p>
                 <p class="hero-description">
-                    Software engineer with an AI/NLP research background specializing in <strong>prompt engineering, domain-aligned LLM behavior, and agent optimization</strong>. At IQVIA, I work on <strong>enterprise LLM-powered assistants for life-sciences analytics</strong>, translating business requirements, client feedback, domain documentation, and data semantics into reliable agent behavior through systematic evaluation, failure analysis, and iterative refinement.
+                    I'm Ovi, a software engineer at IQVIA with an AI/NLP research background from BUET. I work on enterprise LLM assistant behavior and evaluation, and explore how to make AI systems more reliable through research, engineering, and open-source work.
                 </p>
                 
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#contributions" class="btn btn-primary">Explore my contributions <span aria-hidden="true">↗</span></a>
                     <a href="CV_Ovi_Poddar.pdf" class="btn btn-secondary" download>
                         <i class="fas fa-download"></i> Download CV
                     </a>
                 </div>
+                <ul class="focus-list" aria-label="Research interests">
+                    <li>Agentic AI</li><li>RAG</li><li>NLP</li><li>Evaluation</li>
+                </ul>
             </div>
             <div class="hero-image">
-                <div class="profile-card">
+                <figure class="profile-card">
                     <div class="profile-image">
-                        <img src="image.png" alt="Ovi Poddar">
+                        <img src="image.png" alt="Portrait of Ovi Poddar" width="300" height="300">
                     </div>
-                </div>
+                    <figcaption><span class="eyebrow">Engineering × research</span><br>From a reproducible failure<br>to a tested improvement.</figcaption>
+                </figure>
             </div>
+        </div>
+    </section>
+
+    <!-- News is a dated record of submissions, not an acceptance announcement. -->
+    <section id="news" class="news" aria-labelledby="news-title">
+        <div class="container news-layout">
+            <div>
+                <p class="eyebrow">The latest</p>
+                <h2 id="news-title" class="section-title">News &amp; updates</h2>
+                <p class="section-intro">Notes from my research and engineering work.</p>
+            </div>
+            <ol class="news-list">
+                <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/RAG-Gym/RAG-Gym/pull/6">RAG-Gym: improving multiple-choice evaluation <span aria-hidden="true">↗</span></a><p>Fixing answer extraction that could both reject correct responses and reward incorrect ones.</p></div></li>
+                <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Issue reported</span><a href="https://github.com/huggingface/peft/issues/4133">PEFT: investigating lost adapter layers <span aria-hidden="true">↗</span></a><p>A CPU reproduction of source-order-dependent weighted merging in LoRA and IA³.</p></div></li>
+                <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/microsoft/agent-lightning/pull/702">Agent Lightning: validating training rewards <span aria-hidden="true">↗</span></a><p>Checking reward finiteness before conversion to training tensors.</p></div></li>
+                <li><time datetime="2026-11-07">07 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/HKUDS/LightRAG/pull/4312">LightRAG: making interrupted deletions visible <span aria-hidden="true">↗</span></a><p>Tracking deletion state so partially deleted documents remain visible and retryable.</p></div></li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="contributions" class="contributions" aria-labelledby="contributions-title">
+        <div class="container">
+            <div class="section-heading">
+                <div><p class="eyebrow">Open source / in progress</p><h2 id="contributions-title" class="section-title">Small fixes. Meaningful questions.</h2></div>
+                <p class="section-intro">Contributions to the systems behind retrieval, agent training, and fine-tuning. Each links to the original discussion and evidence.</p>
+            </div>
+            <p class="status-snapshot">Status checked <time datetime="2026-11-08">08 Nov 2026</time> · 3 open pull requests · 1 reported issue. These are submitted work, not merged contributions.</p>
+            <div class="contribution-grid">
+                <article class="contribution-card">
+                    <div class="contribution-topline"><span class="work-area">Evaluation correctness</span><span class="work-status">Open PR</span></div>
+                    <h3>RAG-Gym <span class="work-number">#6</span></h3>
+                    <p class="contribution-summary">Read the answer.<br>Not the capital in “Answer.”</p>
+                    <p>The evaluator could extract A from “Answer choice: D.” The submitted fix prioritizes explicit answer formats and narrows the fallback to a unique standalone label.</p>
+                    <div class="evidence-line">7 CPU tests passed · CLI regression coverage</div>
+                    <details><summary>Technical notes &amp; limitations</summary><div class="contribution-notes"><p><strong>Cause:</strong> an unconditional regex selected the first capital A/B/C/D anywhere in the response.</p><p><strong>Change:</strong> recognize bare labels, retain structured patterns, and use a unique standalone-letter fallback.</p><p><strong>Evidence:</strong> failing baseline tests, passing unit and CLI tests, and open-ended QA controls.</p><p><strong>Limit:</strong> synthetic fixtures, not a model benchmark. Existing extraction heuristics remain; published results were not reproduced.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/RAG-Gym/RAG-Gym/pull/6">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for RAG-Gym #6</span></a>
+                </article>
+                <article class="contribution-card">
+                    <div class="contribution-topline"><span class="work-area">Training reliability</span><span class="work-status">Open PR</span></div>
+                    <h3>Agent Lightning <span class="work-number">#702</span></h3>
+                    <p class="contribution-summary">A finite reward can still<br>overflow a training tensor.</p>
+                    <p>A value valid as a Python float can become infinity in float32. The submitted change rejects non-finite rewards and out-of-range training values before conversion.</p>
+                    <div class="evidence-line">24 CPU regression cases · training-path checks</div>
+                    <details><summary>Technical notes &amp; limitations</summary><div class="contribution-notes"><p><strong>Cause:</strong> a finite value such as 1e40 exceeds float32's finite range.</p><p><strong>Change:</strong> validate rewards and fallbacks, with errors identifying the rollout. Preserve large finite validation metrics.</p><p><strong>Evidence:</strong> boundary cases and a local event-API-to-training-tensor reproduction.</p><p><strong>Limit:</strong> CPU validation; no GPU training or model-quality improvement claim.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/microsoft/agent-lightning/pull/702">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for Agent Lightning #702</span></a>
+                </article>
+                <article class="contribution-card">
+                    <div class="contribution-topline"><span class="work-area">RAG system reliability</span><span class="work-status">Open PR</span></div>
+                    <h3>LightRAG <span class="work-number">#4312</span></h3>
+                    <p class="contribution-summary">An interrupted deletion<br>shouldn't look complete.</p>
+                    <p>Partially deleted documents could retain a healthy-looking status. The submitted change exposes deletion-in-progress state and keeps interrupted work visible for retry.</p>
+                    <div class="evidence-line">Deletion lifecycle tests · status &amp; UI changes</div>
+                    <details><summary>Technical notes &amp; limitations</summary><div class="contribution-notes"><p><strong>Problem:</strong> interrupted cleanup can leave document status inconsistent with stored data.</p><p><strong>Change:</strong> track DELETING state, isolate it from ingestion, preserve it during scans, and expose it in the interface.</p><p><strong>Evidence:</strong> focused deletion lifecycle and frontend tests described in the PR.</p><p><strong>Limit:</strong> broader validation had platform-specific failures; native Linux validation was incomplete. This does not guarantee atomic deletion across stores.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/HKUDS/LightRAG/pull/4312">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for LightRAG #4312</span></a>
+                </article>
+                <article class="contribution-card contribution-card--issue">
+                    <div class="contribution-topline"><span class="work-area">Adapter correctness</span><span class="work-status work-status--issue">Reported issue</span></div>
+                    <h3>Hugging Face PEFT <span class="work-number">#4133</span></h3>
+                    <p class="contribution-summary">Combining adapters<br>can leave layers behind.</p>
+                    <p>Weighted merging can inherit the first adapter's targeting filters and omit another adapter's layers. Reversing source order changes which layers survive.</p>
+                    <div class="evidence-line">18 CPU reproduction cases · no fix implemented</div>
+                    <details><summary>Technical notes &amp; limitations</summary><div class="contribution-notes"><p><strong>Cause:</strong> combined configurations retain the first source's exclusion filters; LoRA layer-index filters are affected too.</p><p><strong>Evidence:</strong> LoRA and IA³ toy-model cases, save/reload checks, and a tiny random Llama reproduction.</p><p><strong>Proposal:</strong> preserve the source-target union or explicitly reject incompatible filters, subject to maintainer guidance.</p><p><strong>Status:</strong> issue report only. No library patch or PR; implementation awaits maintainer approval.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/huggingface/peft/issues/4133">Read issue &amp; reproduction <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+            <p class="contribution-disclosure">Developed with AI assistance. Linked submissions document the executed checks, scope, and limitations. Submission does not imply maintainer acceptance.</p>
         </div>
     </section>
 
@@ -889,6 +963,7 @@
         </div>
     </section>
 
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
