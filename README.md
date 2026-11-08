@@ -15,7 +15,7 @@ feature branches do not replace the live site.
 - Check the linked upstream PR or issue before changing a status. Update the
   status-check date and summary counts at the same time as the relevant badge.
 - An open PR is submitted work, not a merged contribution. An issue report is
-  not an implemented fix. Retain evidence, limitations, and AI-assistance context.
+  not an implemented fix. Keep project descriptions and technical evidence accurate.
 - Counts and statuses are a manually checked snapshot, not a live GitHub feed.
 
 The original project/research component styles are in `styles.css`; the shared

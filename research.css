@@ -114,6 +114,89 @@ html:not(.js) .projects-nav { display: none; }
 .footer { background: var(--ink); }
 .footer-content { font-size: .75rem; }
 
+/* Research and professional work share a quieter, publication-led hierarchy. */
+.publication-feature { padding: 36px 40px; margin: 34px 0 44px; background: #eef0f7; border: 1px solid #d6dbea; border-radius: 8px; scroll-margin-top: 96px; }
+.publication-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: #4d5689; font-size: .7rem; margin-bottom: 22px; }
+.publication-label { text-transform: uppercase; font-size: .62rem; letter-spacing: .09em; font-weight: 600; }
+.publication-feature h3 { max-width: 790px; font-size: clamp(1.35rem, 2.7vw, 1.95rem); font-weight: 500; line-height: 1.35; letter-spacing: -.035em; margin-bottom: 18px; }
+.publication-feature .publication-authors { font-size: .76rem; color: #58616f; margin-bottom: 20px; }
+.publication-feature .publication-description { max-width: 780px; font-size: .88rem; line-height: 1.85; margin-bottom: 24px; }
+.publication-links { flex-wrap: wrap; gap: 24px; }
+.publication-link { font-size: .78rem; font-weight: 600; }
+.research-record, .experience-record { display: grid; grid-template-columns: 215px minmax(0, 1fr); gap: 48px; border-top: 1px solid var(--line); padding: 32px 0; }
+.research-record h3, .experience-record h3 { font-size: 1.2rem; letter-spacing: -.035em; font-weight: 600; margin-bottom: 12px; }
+.research-record p, .experience-record p, .about-editorial p:not(.eyebrow) { font-size: .88rem; color: var(--color-text); line-height: 1.85; margin-bottom: 14px; }
+.record-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; font-size: .72rem; line-height: 1.75; color: var(--color-muted); }
+.record-meta > :first-child { color: var(--ink); font-weight: 500; }
+.record-meta .research-status { font-size: .6rem; margin: 0; padding: 5px 8px; border-radius: 3px; background: #edece4; color: #615d3d; }
+.research-record .record-credit { font-size: .75rem; color: var(--color-muted); margin: 18px 0; }
+.record-credit a { color: inherit; }
+.research-directions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 22px; gap: 32px; }
+.research-directions > div { border-top: 2px solid #c9cfdf; padding-top: 20px; }
+.direction-number { display: block; font-family: ui-monospace, monospace; font-size: .66rem; color: var(--color-primary); margin-bottom: 13px; }
+.research-directions h3 { font-size: .9rem; font-weight: 600; margin-bottom: 9px; }
+.research-directions p { font-size: .79rem; color: var(--color-text); line-height: 1.8; }
+.experience .section-heading { margin-bottom: 38px; }
+.experience-record .role-focus { font-size: .73rem; color: var(--color-primary); margin: 0 0 18px; }
+.editorial-list { padding-left: 18px; color: var(--color-text); font-size: .83rem; line-height: 1.85; }
+.editorial-list li { margin-bottom: 12px; padding-left: 4px; }
+.editorial-list li::marker { color: #8992b5; }
+.about-editorial { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); gap: 80px; align-items: start; }
+.about-editorial .section-title { margin-bottom: 24px; }
+.about-editorial p.about-lead { font-size: 1.18rem; line-height: 1.65; color: var(--ink); letter-spacing: -.025em; }
+.education-note { padding: 30px; background: #f0f0eb; border-radius: 5px; border-top: 2px solid #a2ad9b; }
+.education-note h3 { font-size: 1rem; font-weight: 500; line-height: 1.55; letter-spacing: -.02em; margin-bottom: 14px; }
+.education-note .eyebrow { margin-bottom: 16px; }
+.education-note p.education-grade { font-size: 2rem; color: var(--ink); margin: 18px 0; letter-spacing: -.04em; }
+.education-grade span { font-size: .7rem; color: var(--color-muted); letter-spacing: 0; }
+.projects-category { padding: 0; overflow: hidden; }
+.projects-category .projects-category-header { padding: 24px 28px; margin: 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; box-shadow: none; background: #f6f6f2; gap: 15px; }
+.projects-category .projects-category-icon { width: 32px; height: 32px; font-size: .95rem; background: transparent; color: var(--color-primary); border: 1px solid #d9ddec; border-radius: 5px; }
+.projects-category-text { min-width: 0; }
+.projects-category .projects-category-text h3 { font-size: 1rem; font-weight: 600; letter-spacing: -.025em; margin-bottom: 5px; }
+.projects-category-text p { font-size: .73rem; line-height: 1.7; }
+.projects-category .projects-count { background: transparent; color: var(--color-muted); font-size: .76rem; padding: 0; }
+.projects-showcase { grid-template-columns: 225px minmax(0, 1fr); gap: 0; }
+.projects-nav { position: static; padding: 18px 12px; gap: 4px; border-right: 1px solid var(--line); background: #fafaf7; }
+.project-nav-item { border: 0; border-left: 2px solid transparent; border-radius: 0; box-shadow: none; padding: 14px 15px; background: transparent; }
+.projects-category .project-nav-item:hover { transform: none; background: #f0f0ec; }
+.projects-category .project-nav-item.active { transform: none; background: #eceff7; border-color: var(--color-primary); box-shadow: none; }
+.projects-category .project-nav-item.active .project-nav-title { color: var(--ink); }
+.projects-category .project-nav-item.active .project-nav-meta { color: #4d5b88; }
+.project-nav-title { font-size: .8rem; font-weight: 500; }
+.project-nav-meta { font-size: .64rem; }
+.projects-detail { min-width: 0; }
+.project-detail-panel { padding: 28px 32px; border: 0; border-radius: 0; box-shadow: none; background: #fff; }
+.project-detail-header h4 { font-size: 1.15rem; font-weight: 500; letter-spacing: -.03em; line-height: 1.4; }
+.project-description { font-size: .86rem; line-height: 1.85; }
+.project-description-list { font-size: .82rem; line-height: 1.85; }
+.project-year { font-size: .65rem; border-radius: 3px; }
+.project-link { font-size: .76rem; }
+.skills-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 36px; counter-reset: skill; }
+.skill-category, .skill-category--genai, .skill-category--llm, .skill-category--tools { border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 24px 0; background: transparent; box-shadow: none; }
+.skill-category::before { counter-increment: skill; content: '0' counter(skill); font-family: ui-monospace, monospace; color: var(--color-primary); font-size: .64rem; display: block; margin-bottom: 14px; }
+.skill-category h3 { font-size: .88rem; margin-bottom: 15px; font-weight: 600; }
+.skill-items { display: flex; gap: 8px 13px; }
+.skills .skill-category .skill-item { font-size: .75rem; padding: 0; background: transparent; color: var(--color-text); border: 0; border-radius: 0; }
+.skills .skill-category .skill-item:hover { background: transparent; color: var(--color-text); transform: none; }
+.achievements-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+.achievement-item { border: 0; border-top: 1px solid var(--line); padding: 24px 0; border-radius: 0; text-align: left; background: transparent; box-shadow: none; }
+.achievement-icon { display: none; }
+.achievement-item h3 { font-size: .95rem; font-weight: 600; margin-bottom: 12px; }
+.achievement-item p { font-size: .82rem; line-height: 1.85; }
+.achievement-links { justify-content: flex-start; }
+.achievement-link { font-size: .7rem; padding: 0; border: 0; background: transparent; }
+.contact-editorial { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.contact-editorial .section-title { margin-bottom: 22px; }
+.contact-channels { min-width: 0; }
+.contact-email { display: flex; justify-content: space-between; gap: 12px; color: var(--ink); text-decoration: none; font-size: clamp(.85rem, 1.6vw, 1.15rem); letter-spacing: -.02em; border-bottom: 1px solid var(--line); padding: 18px 0; overflow-wrap: anywhere; }
+.contact-email:hover { color: var(--color-primary); }
+.contact-professional-links { display: flex; flex-wrap: wrap; gap: 16px 26px; margin-top: 22px; }
+.contact-professional-links a { color: var(--color-primary); font-size: .77rem; text-decoration: none; }
+.contact-professional-links a:hover { text-decoration: underline; }
+.contact-location { font-size: .7rem; color: var(--color-muted); margin-top: 27px; }
+.contact-location a { color: inherit; text-decoration: none; }
+
 @media (max-width: 1000px) {
     .hero-container { gap: 40px; }
     .nav-menu { gap: 18px; }
@@ -122,6 +205,9 @@ html:not(.js) .projects-nav { display: none; }
     .contribution-card { padding: 24px; }
 }
 @media (max-width: 900px) {
+    .research-record, .experience-record { grid-template-columns: 170px minmax(0, 1fr); gap: 30px; }
+    .about-editorial { gap: 36px; }
+    .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .nav-container { height: 70px; flex-wrap: wrap; }
     .nav-toggle { display: flex; }
     .nav-menu { position: static; display: flex; flex-wrap: wrap; width: 100%; padding: 15px 0; background: var(--paper); box-shadow: none; text-align: left; }
@@ -137,6 +223,20 @@ html:not(.js) .projects-nav { display: none; }
     .section-heading .section-intro { margin-top: 22px; max-width: 600px; }
 }
 @media (max-width: 680px) {
+    .publication-feature { padding: 25px; }
+    .publication-feature h3 { font-size: 1.3rem; }
+    .research-record, .experience-record, .about-editorial, .contact-editorial { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .record-meta { flex-direction: row; flex-wrap: wrap; gap: 8px 18px; }
+    .record-meta .research-status { display: inline-block; }
+    .research-directions { grid-template-columns: minmax(0, 1fr); gap: 25px; }
+    .education-note { margin-top: 12px; padding: 25px; }
+    .projects-category .projects-category-header { padding: 20px; align-items: flex-start; }
+    .projects-showcase { grid-template-columns: minmax(0, 1fr); }
+    .projects-nav { flex-direction: row; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 10px; gap: 6px; max-width: 100%; }
+    .project-nav-item { flex: 0 0 155px; width: 155px; padding: 12px; }
+    .project-detail-panel { padding: 24px; }
+    .skills-grid { grid-template-columns: minmax(0, 1fr); }
+    .contact-editorial { gap: 24px; }
     section { padding: 60px 0; }
     .container, .nav-container, .hero-container { padding-left: 24px; padding-right: 24px; }
     .hero { padding: 116px 0 56px; }
