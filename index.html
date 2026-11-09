@@ -510,9 +510,24 @@
                 <div><p class="eyebrow">Open source</p><h2 id="contributions-title" class="section-title">Open-source contributions</h2></div>
                 <p class="section-intro">Work on evaluation correctness, training reliability, retrieval systems, and parameter-efficient fine-tuning.</p>
             </div>
-            <p class="status-snapshot"><time datetime="2026-11-08">November 2026</time> · 3 open pull requests · 1 open issue</p>
+            <p class="status-snapshot"><time datetime="2026-11-09">November 2026</time> · 5 open pull requests · 1 open issue</p>
             <div class="contribution-carousel" role="region" aria-roledescription="carousel" aria-label="Open-source contributions">
             <div class="contribution-grid contribution-track" id="contribution-track" tabindex="0" aria-label="Contribution cards">
+                <article class="contribution-card">
+                    <div class="contribution-topline"><span class="work-area">Agent memory</span><span class="work-status">2 open PRs</span></div>
+                    <h3>Graphiti</h3>
+                    <p class="contribution-summary">Temporal retrieval<br>and graph reliability</p>
+                    <p>A 21-case Neo4j benchmark measured when historical facts were returned, missed, or mixed with facts from the wrong period. A separate patch lets Neo4j save entities with optional embeddings.</p>
+                    <div class="evidence-line">21 retrieval cases · live Neo4j</div>
+                    <details>
+                        <summary>Technical overview</summary>
+                        <div class="contribution-notes">
+                            <p>Submitted documentation and a regression test for <a href="https://github.com/getzep/graphiti/pull/2138">point-in-time retrieval</a>, including queries at the boundary between two facts.</p>
+                            <p>Independently reproduced two retrieval failures and validated existing patches for <a href="https://github.com/getzep/graphiti/pull/1962#issuecomment-6737432420">combined date filters</a> and <a href="https://github.com/getzep/graphiti/pull/1970#issuecomment-6737433944">full-text candidate limits</a>. The second patch recovered the valid fact at rank one behind 30 superseded candidates.</p>
+                        </div>
+                    </details>
+                    <a class="contribution-link" href="https://github.com/getzep/graphiti/pull/2140">View Neo4j embedding fix <span aria-hidden="true">↗</span></a>
+                </article>
                 <article class="contribution-card">
                     <div class="contribution-topline"><span class="work-area">RAG system reliability</span><span class="work-status">Open PR</span></div>
                     <h3>LightRAG <span class="work-number">#4312</span></h3>
@@ -598,6 +613,7 @@
             </div>
             <div class="news-scroll-panel" role="region" aria-label="Career and research updates" tabindex="0">
             <ol class="news-list">
+                <li><time datetime="2026-11-09">09 Nov 2026</time><div><span class="news-kind">Open-source evaluation</span><a href="https://github.com/getzep/graphiti/pull/1970#issuecomment-6737433944">Evaluated temporal retrieval in Graphiti <span aria-hidden="true">↗</span></a><p>Ran 21 retrieval cases on Neo4j and reproduced two ways a search can miss a fact that was valid at the requested time.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/RAG-Gym/RAG-Gym/pull/6">RAG-Gym: improving multiple-choice evaluation <span aria-hidden="true">↗</span></a><p>Fixing answer extraction that could both reject correct responses and reward incorrect ones.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Issue reported</span><a href="https://github.com/huggingface/peft/issues/4133">PEFT: investigating lost adapter layers <span aria-hidden="true">↗</span></a><p>A CPU reproduction of source-order-dependent weighted merging in LoRA and IA³.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/microsoft/agent-lightning/pull/702">Agent Lightning: validating training rewards <span aria-hidden="true">↗</span></a><p>Checking reward finiteness before conversion to training tensors.</p></div></li>
