@@ -3,415 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ovi Poddar - Software Engineer Portfolio</title>
+    <title>Ovi Poddar | AI Engineering &amp; Applied Research</title>
+    <meta name="description" content="Ovi Poddar's work in applied LLMs, agentic systems, NLP, and trustworthy AI. Explore research, engineering projects, and open-source contributions with linked evidence.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research.css?v=20261108-3">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">Ovi Poddar</a>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#research" class="nav-link">Research</a>
                 <a href="#projects" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contributions" class="nav-link">Contributions</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-controls="nav-menu" aria-expanded="false" hidden>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
+    <main id="main-content" tabindex="-1">
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Ovi Poddar</span></h1>
-                <h2 class="hero-subtitle">Software Engineer • Generative AI &amp; Agentic Systems • Prompt Engineering &amp; Agent Behavior Optimization</h2>
+                <p class="eyebrow">Ovi Poddar / Software engineer</p>
+                <h1 class="hero-title">Engineering<br><span class="highlight">reliable AI systems.</span></h1>
+                <p class="hero-subtitle">Applied LLMs, agentic systems &amp; trustworthy AI.</p>
                 <p class="hero-description">
-                    Software engineer with an AI/NLP research background specializing in <strong>prompt engineering, domain-aligned LLM behavior, and agent optimization</strong>. At IQVIA, I work on <strong>enterprise LLM-powered assistants for life-sciences analytics</strong>, translating business requirements, client feedback, domain documentation, and data semantics into reliable agent behavior through systematic evaluation, failure analysis, and iterative refinement.
+                    I'm Ovi, a software engineer at IQVIA and a BUET graduate with research experience in NLP. My work connects enterprise LLM assistants with hands-on projects in retrieval, agent workflows, and model fine-tuning.
                 </p>
-                
+
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#research" class="btn btn-primary">Explore my research <span aria-hidden="true">↗</span></a>
                     <a href="CV_Ovi_Poddar.pdf" class="btn btn-secondary" download>
                         <i class="fas fa-download"></i> Download CV
                     </a>
                 </div>
+                <ul class="focus-list" aria-label="Research interests">
+                    <li>Applied LLMs</li><li>Agentic AI</li><li>RAG</li><li>NLP</li>
+                </ul>
+                <div class="hero-credentials"><a href="#publications">ESEM 2023 publication <span aria-hidden="true">↗</span></a><a href="#experience">Industry experience <span aria-hidden="true">↗</span></a></div>
             </div>
             <div class="hero-image">
-                <div class="profile-card">
+                <figure class="profile-card">
                     <div class="profile-image">
-                        <img src="image.png" alt="Ovi Poddar">
+                        <img src="image.png" alt="Portrait of Ovi Poddar" width="300" height="300">
                     </div>
-                </div>
+                    <figcaption><span class="eyebrow">Dhaka, Bangladesh</span><br>Software engineer · IQVIA<br>Computer Science &amp; Engineering · BUET</figcaption>
+                </figure>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-              <div class="about-text">
-                <p>
-                  I am a software engineer specializing in <strong>Generative AI, prompt engineering, and AI agent behavior optimization</strong>. My background spans full-stack engineering (.NET Core, Angular, PostgreSQL, AWS), AI/NLP research at the Bangladesh University of Engineering and Technology (BUET) — including an ESEM 2023 publication on code-review analytics — and enterprise LLM systems, where I focus on translating domain requirements into reliable agent behavior.
-                </p>
-              
-                <p>
-                  At IQVIA, I work on <strong>enterprise LLM-powered assistants in the life-sciences domain</strong>. My work sits at the intersection of prompt engineering, domain and business requirements, agent configuration, and output validation. I translate client feedback, business documentation, and available data semantics into system instructions and behavioral constraints, then iteratively evaluate and refine agent responses for accuracy, consistency, and adherence to domain requirements.
-                </p>
-              
-                <p>
-                  I work within <strong>LangChain/LangGraph-based agent systems</strong>, focusing on prompt configuration, behavior analysis, and evaluation — including LLM/agent observability with <strong>LangSmith</strong> — rather than backend agent implementation. In personal projects, I build agentic applications using <strong>LangGraph, OpenAI Agents SDK, RAG, MCP, and multi-agent workflows</strong>. My broader interests lie at the intersection of <strong>LLMs, NLP, agentic systems, and software engineering</strong>, particularly in building reliable and domain-aware AI systems.
-                </p>
-              </div>              
-                  
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>3+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat">
-                        <h3>2500+</h3>
-                        <p>Problems Solved</p>
-                    </div>
-                    <div class="stat">
-                        <h3>3.61</h3>
-                        <p>CGPA (BUET)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                      <h3>Software Development Engineer</h3>
-                      <h4>IQVIA</h4>
-                      <span class="timeline-date">Feb 2024 – Present</span>
-                      <p>
-                        Currently part of the <strong>Digital Navigator Enhancements</strong> team, contributing to enterprise <strong>LLM-powered assistants for life-sciences analytics</strong>, with a primary focus on <strong>prompt engineering, agent behavior optimization, and LLM evaluation</strong>.
-                      </p>
-            
-                      <p>
-                        Translate <strong>client feedback, business requirements, domain documentation, and available data semantics</strong> into precise system instructions, business rules, behavioral constraints, and agent configurations.
-                      </p>
-                      
-                      <p><strong>Key Responsibilities:</strong></p>
-                      <ul>
-                        <li>Design and iteratively refine <strong>system prompts and agent instructions</strong> to improve response accuracy, consistency, and adherence to domain-specific requirements.</li>
-                        <li>Analyze <strong>LLM failure cases and edge cases</strong>, identify behavioral issues, and implement prompt- and configuration-level improvements.</li>
-                        <li>Configure and optimize <strong>agent behavior, routing, instructions, and runtime settings</strong> within a multi-agent AI environment.</li>
-                        <li>Validate AI-generated responses against <strong>business rules, domain documentation, and available enterprise data</strong> to identify inconsistencies and incorrect interpretations.</li>
-                        <li>Translate complex <strong>life-sciences domain requirements and data semantics</strong> into prompts and behavioral rules that guide reliable agent responses.</li>
-                        <li>Collaborate with engineering and domain stakeholders to investigate <strong>client-reported issues</strong>, reproduce problematic behavior, and iteratively improve agent responses.</li>
-                        <li>Work within <strong>LangChain/LangGraph-based agent systems</strong>, including prompt configuration, behavior analysis, and evaluation using <strong>LangSmith</strong> for LLM/agent observability, with ownership over agent behavior rather than backend framework implementation.</li>
-                      </ul>
-                      
-                      <p><strong>Previously:</strong> Developed and maintained core IQVIA platform components involving cloud storage, document management, authentication, and security using <strong>.NET Core</strong>, <strong>C#</strong>, <strong>Angular</strong>, <strong>PostgreSQL</strong>, <strong>AWS S3</strong>, and related technologies.</p>
-                      <ul>
-                        <li>Built a cloud-based storage management application using <strong>AWS S3</strong>, <strong>.NET Core</strong>, and <strong>Angular</strong></li>
-                        <li>Delivered features and security enhancements across <strong>document management</strong>, <strong>portal admin</strong>, and <strong>authentication</strong> modules</li>
-                        <li>Diagnosed and resolved critical bugs and performance issues in distributed systems</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                      <h3>Software Engineer I</h3>
-                      <h4>Enosis Solutions</h4>
-                      <span class="timeline-date">Jun 2023 – Jan 2024</span>
-                      <p>
-                        Contributed to an e-learning web application using ASP.NET Core, Angular, and SQL Server, focusing on performance, scalability, and user experience.
-                      </p>
-                      <ul>
-                        <li>Developed new modules and optimized existing ones for high performance and scalability</li>
-                        <li>Delivered critical enhancements, resolved complex bugs, and strengthened system reliability</li>
-                        <li>Collaborated with cross-functional teams to refine requirements and maintain clean, efficient code</li>
-                        <li>Ensured on-time delivery of business-critical releases with consistent quality</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
     <section id="research" class="research">
       <div class="container">
-        <h2 class="section-title">Research</h2>
-
-        <div class="research-publications" id="publications">
-          <h3 class="research-section-title">Publications</h3>
-          <div class="publications-grid">
-            <div class="publication-item">
-              <div class="publication-header">
-                <h3>Towards Automated Classification of Code Review Feedback to Support Analytics</h3>
-                <span class="publication-year">2023</span>
-              </div>
-              <p class="publication-description">
-                Proposed a deep learning–based framework that automatically classifies code review comments
-                (e.g., bug reports, feature requests, improvement suggestions) to support large-scale software
-                analytics. By combining natural language features with code context, the model significantly
-                outperformed existing baselines in classification accuracy and interpretability.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Software Engineering</span>
-                <span class="tech-tag">Machine Learning</span>
-                <span class="tech-tag">Natural Language Processing</span>
-                <span class="tech-tag">Code Review Analytics</span>
-              </div>
-              <p class="publication-authors">
-                Asif Kamal Turzo, Fahim Faysal, <strong>Ovi Poddar</strong>, Anindya Iqbal, Amiangshu Bosu
-              </p>
-              <p class="publication-venue">ESEM 2023 · July 7, 2023</p>
-              <div class="publication-links">
-                <a href="https://arxiv.org/abs/2307.03852" class="publication-link" target="_blank" rel="noopener noreferrer">
-                  <i class="fas fa-external-link-alt"></i> View Paper
-                </a>
-                <a href="https://arxiv.org/pdf/2307.03852" class="publication-link" target="_blank" rel="noopener noreferrer">
-                  <i class="fas fa-file-pdf"></i> PDF
-                </a>
-              </div>
-            </div>
+        <div class="section-heading">
+          <div><p class="eyebrow">Research</p><h2 class="section-title">Language, code &amp;<br>trustworthy AI.</h2></div>
+          <p class="section-intro">My interests connect applied LLMs and agentic systems with NLP, software engineering, and reliable evaluation.</p>
+        </div>
+        <div id="publications" class="publication-feature">
+          <div class="publication-meta"><span class="publication-label">Peer-reviewed publication</span><span>ESEM 2023</span></div>
+          <h3>Towards Automated Classification of Code Review Feedback to Support Analytics</h3>
+          <p class="publication-authors">Asif Kamal Turzo, Fahim Faysal, <strong>Ovi Poddar</strong>, Anindya Iqbal, Amiangshu Bosu</p>
+          <p class="publication-description">A study of automated code-review feedback classification using natural language and code representations to support software-engineering analytics.</p>
+          <div class="publication-links">
+            <a href="https://arxiv.org/abs/2307.03852" class="publication-link" target="_blank" rel="noopener noreferrer">Read paper <span aria-hidden="true">↗</span></a>
+            <a href="https://arxiv.org/pdf/2307.03852" class="publication-link" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-
-        <div class="research-experience">
-          <h3 class="research-section-title">Research Experience</h3>
-          <div class="research-timeline">
-            <div class="research-timeline-item">
-              <div class="research-timeline-marker"></div>
-              <div class="research-timeline-content">
-                <h4>Towards Equitable AI in Pathology</h4>
-                <h5>Collaborative Research Project</h5>
-                <span class="research-timeline-date">March – May 2026</span>
-                <span class="research-status">Manuscript in Preparation — 2026</span>
-                <div class="publication-links">
-                  <a href="histopathology-fairness-review-draft.pdf" class="publication-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-file-pdf"></i> Draft PDF
-                  </a>
-                </div>
-                <p>
-                  Contributed to a collaborative systematic review of <strong>fairness and bias in AI-based histopathology imaging</strong>, following the <strong>PRISMA 2020</strong> framework and synthesizing evidence from <strong>78 studies</strong> published between 2017 and 2026.
-                </p>
-                <ul>
-                  <li>Investigated <strong>bias sources, fairness evaluation practices, and debiasing approaches</strong> across histopathology AI, including demographic bias, tissue-source-site effects, dataset bias, and representation-related gaps</li>
-                  <li>Contributed to an <strong>eight-category taxonomy of bias</strong> spanning demographic, institutional/batch, selection, technical, class/label, algorithmic, confounding, and representation-related biases</li>
-                  <li>Contributed to a proposed <strong>histopathology-specific fairness reporting checklist and benchmark specification</strong> for whole-slide image multiple-instance learning models</li>
-                  <li>Analyzed gaps in fairness reporting, demographic metadata availability, external validation, and reproducibility, including a structured audit of public datasets</li>
-                  <li>Synthesized empirical evidence on <strong>debiasing methods and performance–fairness trade-offs</strong>, identifying methodological gaps for more reliable and equitable pathology AI</li>
-                  <li>Co-authors: <a href="https://www.unsw.edu.au/staff/raktim-kumar-mondol" target="_blank" rel="noopener noreferrer">Dr Raktim Kumar Mondol</a> (UNSW), Shahana Akter</li>
-                </ul>
-              </div>
+        <div class="research-records">
+          <article class="research-record">
+            <div class="record-meta"><span>2026</span><span class="research-status">Manuscript in preparation</span></div>
+            <div>
+              <h3>Towards Equitable AI in Pathology</h3>
+              <p>Contributed to a collaborative PRISMA 2020 systematic review of fairness and bias in histopathology AI, synthesizing 78 studies published between 2017 and 2026.</p>
+              <p>Work included an eight-category bias taxonomy, analysis of fairness evaluation and debiasing practices, and a proposed reporting checklist and benchmark specification.</p>
+              <p class="record-credit">With <a href="https://www.unsw.edu.au/staff/raktim-kumar-mondol" target="_blank" rel="noopener noreferrer">Dr Raktim Kumar Mondol</a> (UNSW) and Shahana Akter · March–May 2026</p>
+              <a href="histopathology-fairness-review-draft.pdf" class="publication-link" target="_blank" rel="noopener noreferrer">Read draft <span aria-hidden="true">↗</span></a>
             </div>
-            <div class="research-timeline-item">
-              <div class="research-timeline-marker"></div>
-              <div class="research-timeline-content">
-                <h4>Undergraduate Research Work</h4>
-                <h5>Bangladesh University of Engineering and Technology (BUET)</h5>
-                <span class="research-timeline-date">February 2022 – April 2023</span>
-                <p>
-                  Conducted research on deep learning–based classification of code review comments by combining
-                  <strong>natural language and code representations</strong>. Proposed hybrid features using
-                  <strong>CodeBERT embeddings</strong> and <strong>AST / change-based metrics</strong>, achieving
-                  significantly higher classification accuracy over baseline models.
-                </p>
-                <ul>
-                  <li>Supervisor: <a href="https://cse.buet.ac.bd/faculty/faculty_detail/anindyaiqbal" target="_blank">Dr. Anindya Iqbal</a></li>
-                  <li>Applied <strong>machine learning and NLP</strong> to software engineering analytics</li>
-                  <li>Published at <strong>ESEM 2023</strong> (Empirical Software Engineering and Measurement Conference)</li>
-                </ul>
-              </div>
+          </article>
+          <article class="research-record">
+            <div class="record-meta"><span>2022–2023</span><span>Undergraduate research</span></div>
+            <div>
+              <h3>NLP for software-engineering analytics</h3>
+              <p>Explored code-review comment classification with CodeBERT embeddings and AST/change-based metrics at the Bangladesh University of Engineering and Technology.</p>
+              <p class="record-credit">Supervised by <a href="https://cse.buet.ac.bd/faculty/faculty_detail/anindyaiqbal" target="_blank" rel="noopener noreferrer">Dr Anindya Iqbal</a> · February 2022–April 2023</p>
             </div>
-          </div>
+          </article>
         </div>
-
-        <h3 class="research-section-title">Research Interests</h3>
-        <div class="research-grid">
-          <div class="research-item">
-            <div class="research-icon"><i class="fas fa-robot"></i></div>
-            <h3>Agentic AI & LLM Systems</h3>
-            <p>
-              Research interests include <strong>LLM agents, multi-agent systems, tool-augmented reasoning, LLM evaluation, agent reliability, and domain-constrained AI systems</strong>. Focused on building agents that behave consistently under real-world constraints.
-            </p>
-            <div class="research-tags">
-              <span class="research-tag">Agentic AI</span>
-              <span class="research-tag">Multi-Agent Systems</span>
-              <span class="research-tag">LLM Evaluation</span>
-              <span class="research-tag">Tool Calling</span>
-            </div>
-          </div>
-          <div class="research-item">
-            <div class="research-icon"><i class="fas fa-language"></i></div>
-            <h3>Natural Language Processing & Large Language Models</h3>
-            <p>
-              Exploring how <strong>LLMs and transformer architectures</strong> understand and generate
-              source code, documentation, and developer intent. Focus on
-              <strong>semantics-aware modeling</strong>, <strong>representation learning</strong>, and
-              <strong>explainable reasoning</strong> to bridge human language and program logic.
-            </p>
-            <div class="research-tags">
-              <span class="research-tag">NLP</span>
-              <span class="research-tag">LLMs</span>
-              <span class="research-tag">Representation Learning</span>
-              <span class="research-tag">Explainable AI</span>
-            </div>
-          </div>
-          <div class="research-item">
-            <div class="research-icon"><i class="fas fa-code"></i></div>
-            <h3>Program Analysis & Intelligent Software Engineering</h3>
-            <p>
-              Integrating <strong>static / dynamic program analysis</strong> with learning-based methods
-              to automate code understanding, defect localization, and developer assistance.
-              Aim to design <strong>semantics-guided ML systems</strong> that improve reliability and maintainability.
-            </p>
-            <div class="research-tags">
-              <span class="research-tag">Program Analysis</span>
-              <span class="research-tag">Software Engineering</span>
-              <span class="research-tag">Code Understanding</span>
-              <span class="research-tag">Automated Verification</span>
-            </div>
-          </div>
-          <div class="research-item">
-            <div class="research-icon"><i class="fas fa-bug"></i></div>
-            <h3>Software Testing & Debugging</h3>
-            <p>
-              Developing scalable, data-driven techniques for <strong>testing and debugging</strong>
-              AI-enabled systems. Interested in leveraging <strong>LLMs</strong> for fault explanation,
-              test generation, and automated repair.
-            </p>
-            <div class="research-tags">
-              <span class="research-tag">Testing</span>
-              <span class="research-tag">Debugging</span>
-              <span class="research-tag">LLMs</span>
-              <span class="research-tag">Automation</span>
-            </div>
-          </div>
-          <div class="research-item">
-            <div class="research-icon"><i class="fas fa-shield-alt"></i></div>
-            <h3>Trustworthy & Responsible AI</h3>
-            <p>
-              Building <strong>reliable, fair, and resilient AI systems</strong>.
-              Interests include <strong>fairness and bias in AI</strong>,
-              <strong>LLM/agent evaluation and reliability</strong>,
-              <strong>adversarial robustness</strong>, and
-              <strong>equitable deployment of AI in high-stakes domains</strong>.
-            </p>
-            <div class="research-tags">
-              <span class="research-tag">Trustworthy AI</span>
-              <span class="research-tag">Fairness & Bias</span>
-              <span class="research-tag">LLM Evaluation</span>
-              <span class="research-tag">Responsible AI</span>
-            </div>
-          </div>
+        <div class="research-directions" aria-label="Research directions">
+          <div><span class="direction-number">01</span><h3>Agentic LLMs &amp; RAG</h3><p>Tool-augmented reasoning, retrieval, agent behavior, and evaluation.</p></div>
+          <div><span class="direction-number">02</span><h3>Language &amp; software</h3><p>Language and code representations, program analysis, and developer assistance.</p></div>
+          <div><span class="direction-number">03</span><h3>Trustworthy AI</h3><p>Reliability, fairness, bias evaluation, and external validation.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-
-            <div class="projects-category projects-category--learning">
-                <div class="projects-category-header">
-                    <div class="projects-category-icon"><i class="fas fa-flask"></i></div>
-                    <div class="projects-category-text">
-                        <h3>Technical Learning &amp; Experiments</h3>
-                        <p>Structured implementation work — weekly labs across LLM engineering and agentic systems</p>
-                    </div>
-                    <span class="projects-count">2</span>
-                </div>
-                <div class="projects-showcase" data-showcase="learning">
-                    <nav class="projects-nav" aria-label="Technical learning navigation">
-                        <button type="button" class="project-nav-item active" data-target="learning-project-1">
-                            <span class="project-nav-title">LLM Engineering Track</span>
-                            <span class="project-nav-meta">RAG · Fine-tuning · 2026</span>
-                        </button>
-                        <button type="button" class="project-nav-item" data-target="learning-project-2">
-                            <span class="project-nav-title">Agentic AI Labs</span>
-                            <span class="project-nav-meta">LangGraph · MCP · 2026</span>
-                        </button>
-                    </nav>
-                    <div class="projects-detail">
-                        <article class="project-detail-panel active" id="learning-project-1">
-                            <div class="project-detail-header">
-                                <h4>LLM Engineering — Core AI Engineer Track</h4>
-                                <span class="project-year">2026</span>
-                            </div>
-                            <p class="project-description">
-                                An implementation-focused eight-week exploration of modern LLM engineering — from LLM applications and multi-model systems through Hugging Face/Transformers, RAG, vector databases, fine-tuning (LoRA/QLoRA), deployment, and agentic AI. Repository organized by week for inspectable, hands-on progress.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">LLM Applications</span>
-                                <span class="tech-tag">Hugging Face</span>
-                                <span class="tech-tag">Transformers</span>
-                                <span class="tech-tag">RAG</span>
-                                <span class="tech-tag">Vector Databases</span>
-                                <span class="tech-tag">Fine-tuning</span>
-                                <span class="tech-tag">LoRA / QLoRA</span>
-                                <span class="tech-tag">Model Deployment</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Ovi-Poddar/Udemy-AI-Engineer-Core-Track-LLM-Engineering-RAG-QLoRA-Agents" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </article>
-                        <article class="project-detail-panel" id="learning-project-2">
-                            <div class="project-detail-header">
-                                <h4>Agentic AI Engineering Labs — LangGraph, MCP &amp; Multi-Agent Frameworks</h4>
-                                <span class="project-year">2026</span>
-                            </div>
-                            <p class="project-description">
-                                Structured labs covering OpenAI Agents SDK, LangChain/LangGraph, CrewAI, and Model Context Protocol (MCP). Built and exercised agent workflows spanning foundations, tool integration, multi-agent orchestration, and custom MCP servers.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">LangGraph</span>
-                                <span class="tech-tag">LangChain</span>
-                                <span class="tech-tag">MCP</span>
-                                <span class="tech-tag">OpenAI Agents SDK</span>
-                                <span class="tech-tag">CrewAI</span>
-                                <span class="tech-tag">Multi-Agent</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Ovi-Poddar/Udemy-AI-Engineer-Agentic-Track-The-Complete-Agent-MCP-Course" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+            <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 class="section-title">Selected engineering work.</h2></div><p class="section-intro">From model comparison and fine-tuning to retrieval pipelines and stateful agents. Explore the problem, implementation, and outcome behind each project.</p></div>
 
             <div class="projects-category projects-category--ai">
                 <div class="projects-category-header">
                     <div class="projects-category-icon"><i class="fas fa-brain"></i></div>
                     <div class="projects-category-text">
-                        <h3>AI / GenAI Projects</h3>
-                        <p>ML/LLM engineering, agentic systems, RAG, and multi-agent workflows</p>
+                        <h3>Applied AI projects</h3>
+                        <p>Fine-tuning, agent workflows, and retrieval systems</p>
                     </div>
                     <span class="projects-count">6</span>
                 </div>
@@ -444,14 +154,26 @@
                     </nav>
                     <div class="projects-detail">
                         <article class="project-detail-panel active" id="ai-project-1">
+                            <p class="case-eyebrow">01 / Model engineering</p>
                             <div class="project-detail-header">
                                 <h4>Amazon Product Price Prediction — LLM &amp; ML Engineering</h4>
                                 <span class="project-year">2026</span>
                             </div>
                             <p class="project-capstone-label">LLM Engineering Capstone · 2026</p>
-                            <p class="project-description">
-                                Built an end-to-end <strong>text-to-price prediction pipeline</strong> from Amazon product metadata — data curation and LLM-assisted preprocessing through classical NLP/ML baselines, deep learning, frontier LLM benchmarking, and parameter-efficient fine-tuning. Evaluated 15+ approaches across the full modeling lifecycle. <strong>QLoRA-tuned Llama 3.2 3B achieved the best MAE ($39.85)</strong> among the evaluated approaches.
-                            </p>
+                            <p class="project-description">Predicting a product's price from its description is a practical way to compare language representations, model families, and adaptation strategies. I built a pipeline from Amazon product-data curation through classical baselines, neural models, API-based LLMs, and QLoRA fine-tuning.</p>
+                            <figure class="model-comparison">
+                                <figcaption><span>Model comparison</span><span>Held-out MAE · USD ↓</span></figcaption>
+                                <div class="comparison-row"><span>XGBoost · Bag-of-Words</span><div class="comparison-bar" style="--bar-width:90%" aria-hidden="true"></div><strong>$68.23</strong></div>
+                                <div class="comparison-row"><span>PyTorch neural network</span><div class="comparison-bar" style="--bar-width:61.3%" aria-hidden="true"></div><strong>$46.49</strong></div>
+                                <div class="comparison-row"><span>GPT-5.1 · zero-shot</span><div class="comparison-bar" style="--bar-width:59%" aria-hidden="true"></div><strong>$44.74</strong></div>
+                                <div class="comparison-row comparison-row--best"><span>Llama 3.2 3B · QLoRA</span><div class="comparison-bar" style="--bar-width:52.6%" aria-hidden="true"></div><strong>$39.85</strong></div>
+                                <p class="visual-source">Selected results reported in the <a href="https://github.com/Ovi-Poddar/Amazon-Price-Predictor#results">project repository</a>. Lower is better.</p>
+                            </figure>
+                            <div class="case-findings">
+                                <div><h5>Implementation</h5><p>LLM-assisted text preparation, reusable inference and evaluation, and 4-bit QLoRA adaptation with PEFT. Experiments span a 20K-sample lite configuration and a full 800K dataset.</p></div>
+                                <div><h5>Finding &amp; scope</h5><p>QLoRA recorded the lowest reported MAE in this project's comparison. Fine-tuning was not uniformly better: GPT-4.1-nano fine-tuning recorded $75.91. These results describe this task and experimental setup.</p></div>
+                            </div>
+                            <details class="case-details"><summary>Explore the experiment pipeline</summary>
                             <ul class="project-highlights">
                                 <li>Curated and preprocessed noisy Amazon product metadata from the <strong>McAuley Amazon Reviews 2023</strong> dataset into model-ready text representations.</li>
                                 <li>Used the <strong>Groq API</strong> to transform raw listings into compact structured descriptions; prepared a <strong>20K-sample curated dataset</strong> (up to <strong>800K</strong> in later experiments).</li>
@@ -460,7 +182,7 @@
                                 <li>Fine-tuned <strong>GPT-4.1-nano</strong> via the OpenAI API and compared against zero-shot baselines, including cases where fine-tuning did not improve performance for the available training setup.</li>
                                 <li>Fine-tuned <strong>Llama 3.2 3B with QLoRA/PEFT and 4-bit quantization</strong>; achieved the lowest MAE (<strong>$39.85</strong>) among evaluated classical ML, neural, and LLM-based approaches.</li>
                                 <li>Developed a reusable evaluation framework with <strong>parallel inference, MAE benchmarking, Plotly visualization, and error analysis</strong> across 15+ model variants.</li>
-                            </ul>
+                            </ul></details>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">NLP</span>
@@ -480,6 +202,7 @@
                             </div>
                         </article>
                         <article class="project-detail-panel" id="ai-project-2">
+                            <p class="case-eyebrow">02 / Agent systems</p>
                             <div class="project-detail-header">
                                 <h4>Agentic Chatbot — LangGraph Multi-Use AI Assistant</h4>
                                 <span class="project-year">2025</span>
@@ -487,6 +210,13 @@
                             <p class="project-description">
                                 Designed and implemented a stateful agentic workflow using <strong>LangGraph</strong>, with specialized nodes for conversational reasoning, web search, and news aggregation. Implemented state management, conditional routing, caching, retries, and tool integration to support reliable multi-step agent execution. Built with <strong>Streamlit</strong> for a unified interface and <strong>Tavily API</strong> for real-time search.
                             </p>
+
+                            <figure class="system-figure">
+                                <figcaption>One interface, three agent workflows</figcaption>
+                                <div class="agent-flow"><div class="flow-node"><span class="flow-kicker">Input</span><strong>Message + state</strong><small>Streamlit interface</small></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-node flow-node--accent"><span class="flow-kicker">Routing</span><strong>LangGraph</strong><small>State &amp; conditional routing</small></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-routes"><span>Conversation</span><span>Web search · Tavily</span><span>AI news summaries</span></div></div>
+                                <p class="visual-source">Workflow overview based on the <a href="https://github.com/Ovi-Poddar/Agentic-Chatbot#architecture">documented architecture</a>.</p>
+                            </figure>
+                            <div class="case-findings"><div><h5>Engineering focus</h5><p>Separate graph nodes, shared conversation state, tool integration, cached graph compilation, and retries with exponential backoff.</p></div><div><h5>Outcome &amp; scope</h5><p>A working chat, search, and news application with documented demos. The repository does not report a controlled task-success or latency benchmark.</p></div></div>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">LangGraph</span>
@@ -502,6 +232,7 @@
                             </div>
                         </article>
                         <article class="project-detail-panel" id="ai-project-3">
+                            <p class="case-eyebrow">03 / Retrieval engineering</p>
                             <div class="project-detail-header">
                                 <h4>InfoScope AI — RAG &amp; News Intelligence</h4>
                                 <span class="project-year">2025</span>
@@ -509,6 +240,13 @@
                             <p class="project-description">
                                 Built a retrieval-augmented news intelligence system using <strong>OpenAI</strong>, <strong>LangChain</strong>, and <strong>FAISS</strong>. Users load article URLs or text files into a semantic index and ask context-aware questions with cited responses. Designed an end-to-end <strong>RAG pipeline</strong> with Streamlit UI for efficient research workflows.
                             </p>
+
+                            <figure class="system-figure">
+                                <figcaption>From source articles to grounded answers</figcaption>
+                                <ol class="rag-flow"><li><span>01 / Collect</span><strong>URLs or text</strong><small>Fetch &amp; prepare sources</small></li><li><span>02 / Index</span><strong>Embeddings + FAISS</strong><small>Persist a semantic index</small></li><li><span>03 / Retrieve</span><strong>Question + context</strong><small>Find relevant passages</small></li><li><span>04 / Answer</span><strong>LLM response</strong><small>Return source citations</small></li></ol>
+                                <p class="visual-source">Pipeline overview based on the <a href="https://github.com/Ovi-Poddar/InfoScope-AI#-overview">project documentation</a>.</p>
+                            </figure>
+                            <div class="case-findings"><div><h5>Engineering focus</h5><p>Source ingestion, semantic retrieval, a reusable local FAISS index, and a Streamlit question-answering interface.</p></div><div><h5>Outcome &amp; scope</h5><p>A documented application and video demo for exploring indexed articles. Citations support source inspection; the project does not establish answer faithfulness through a formal benchmark.</p></div></div>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">LangChain</span>
@@ -596,6 +334,77 @@
                 </div>
             </div>
 
+            <div class="projects-category projects-category--learning">
+                <div class="projects-category-header">
+                    <div class="projects-category-icon"><i class="fas fa-flask"></i></div>
+                    <div class="projects-category-text">
+                        <h3>Technical Learning &amp; Experiments</h3>
+                        <p>Structured implementation work — weekly labs across LLM engineering and agentic systems</p>
+                    </div>
+                    <span class="projects-count">2</span>
+                </div>
+                <div class="projects-showcase" data-showcase="learning">
+                    <nav class="projects-nav" aria-label="Technical learning navigation">
+                        <button type="button" class="project-nav-item active" data-target="learning-project-1">
+                            <span class="project-nav-title">LLM Engineering Track</span>
+                            <span class="project-nav-meta">RAG · Fine-tuning · 2026</span>
+                        </button>
+                        <button type="button" class="project-nav-item" data-target="learning-project-2">
+                            <span class="project-nav-title">Agentic AI Labs</span>
+                            <span class="project-nav-meta">LangGraph · MCP · 2026</span>
+                        </button>
+                    </nav>
+                    <div class="projects-detail">
+                        <article class="project-detail-panel active" id="learning-project-1">
+                            <div class="project-detail-header">
+                                <h4>LLM Engineering — Core AI Engineer Track</h4>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-description">
+                                An implementation-focused eight-week exploration of modern LLM engineering — from LLM applications and multi-model systems through Hugging Face/Transformers, RAG, vector databases, fine-tuning (LoRA/QLoRA), deployment, and agentic AI. Repository organized by week for inspectable, hands-on progress.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">LLM Applications</span>
+                                <span class="tech-tag">Hugging Face</span>
+                                <span class="tech-tag">Transformers</span>
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">Vector Databases</span>
+                                <span class="tech-tag">Fine-tuning</span>
+                                <span class="tech-tag">LoRA / QLoRA</span>
+                                <span class="tech-tag">Model Deployment</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/Udemy-AI-Engineer-Core-Track-LLM-Engineering-RAG-QLoRA-Agents" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
+                        <article class="project-detail-panel" id="learning-project-2">
+                            <div class="project-detail-header">
+                                <h4>Agentic AI Engineering Labs — LangGraph, MCP &amp; Multi-Agent Frameworks</h4>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <p class="project-description">
+                                Structured labs covering OpenAI Agents SDK, LangChain/LangGraph, CrewAI, and Model Context Protocol (MCP). Built and exercised agent workflows spanning foundations, tool integration, multi-agent orchestration, and custom MCP servers.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">LangGraph</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">MCP</span>
+                                <span class="tech-tag">OpenAI Agents SDK</span>
+                                <span class="tech-tag">CrewAI</span>
+                                <span class="tech-tag">Multi-Agent</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ovi-Poddar/Udemy-AI-Engineer-Agentic-Track-The-Complete-Agent-MCP-Course" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
             <div class="projects-category projects-category--se">
                 <div class="projects-category-header">
                     <div class="projects-category-icon"><i class="fas fa-code"></i></div>
@@ -627,7 +436,7 @@
                                 <span class="project-year">2022</span>
                             </div>
                             <p class="project-description">
-                                Full-stack MERN application where users can discover local businesses, 
+                                Full-stack MERN application where users can discover local businesses,
                                 create business profiles, leave reviews, provide star ratings, and upload photos.
                             </p>
                             <div class="project-tech">
@@ -648,7 +457,7 @@
                                 <span class="project-year">2021</span>
                             </div>
                             <p class="project-description">
-                                Instagram-like social networking platform supporting account authentication, 
+                                Instagram-like social networking platform supporting account authentication,
                                 photo sharing, following, likes, comments, notifications, and chat.
                             </p>
                             <div class="project-tech">
@@ -671,7 +480,7 @@
                                 <span class="project-year">2021</span>
                             </div>
                             <p class="project-description">
-                                Digital alarm clock system using ATMEGA32 microcontroller integrated with 
+                                Digital alarm clock system using ATMEGA32 microcontroller integrated with
                                 an SD-Card module for data storage and real-time clock functionality.
                             </p>
                             <div class="project-tech">
@@ -695,10 +504,134 @@
         </div>
      </section>
 
-     <!-- Skills Section -->
-     <section id="skills" class="skills">
+    <section id="contributions" class="contributions" aria-labelledby="contributions-title">
         <div class="container">
-          <h2 class="section-title">Technical Skills</h2>
+            <div class="section-heading">
+                <div><p class="eyebrow">Open source</p><h2 id="contributions-title" class="section-title">Open-source contributions</h2></div>
+                <p class="section-intro">Work on evaluation correctness, training reliability, retrieval systems, and parameter-efficient fine-tuning.</p>
+            </div>
+            <p class="status-snapshot"><time datetime="2026-11-08">November 2026</time> · 3 open pull requests · 1 open issue</p>
+            <div class="contribution-carousel" role="region" aria-roledescription="carousel" aria-label="Open-source contributions">
+            <div class="contribution-grid contribution-track" id="contribution-track" tabindex="0" aria-label="Contribution cards">
+                <article class="contribution-card">
+                    <div class="contribution-topline"><span class="work-area">RAG system reliability</span><span class="work-status">Open PR</span></div>
+                    <h3>LightRAG <span class="work-number">#4312</span></h3>
+                    <p class="contribution-summary">Recoverable<br>document deletion</p>
+                    <p>Partially deleted documents could retain a healthy-looking status. The submitted change exposes deletion-in-progress state and keeps interrupted work visible for retry.</p>
+                    <div class="evidence-line">Deletion lifecycle tests · status &amp; UI changes</div>
+                    <details><summary>Technical overview</summary><div class="contribution-notes"><p><strong>Problem:</strong> interrupted cleanup can leave document status inconsistent with stored data.</p><p><strong>Change:</strong> track DELETING state, isolate it from ingestion, preserve it during scans, and expose it in the interface.</p><p><strong>Evidence:</strong> focused deletion lifecycle and frontend tests described in the PR.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/HKUDS/LightRAG/pull/4312">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for LightRAG #4312</span></a>
+                </article>
+                <article class="contribution-card">
+                    <div class="contribution-topline"><span class="work-area">Training reliability</span><span class="work-status">Open PR</span></div>
+                    <h3>Agent Lightning <span class="work-number">#702</span></h3>
+                    <p class="contribution-summary">Reward validation<br>for agent training</p>
+                    <p>A value valid as a Python float can become infinity in float32. The submitted change rejects non-finite rewards and out-of-range training values before conversion.</p>
+                    <div class="evidence-line">24 CPU regression cases · training-path checks</div>
+                    <details><summary>Technical overview</summary><div class="contribution-notes"><p><strong>Cause:</strong> a finite value such as 1e40 exceeds float32's finite range.</p><p><strong>Change:</strong> validate rewards and fallbacks, with errors identifying the rollout. Preserve large finite validation metrics.</p><p><strong>Evidence:</strong> boundary cases and a local event-API-to-training-tensor reproduction.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/microsoft/agent-lightning/pull/702">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for Agent Lightning #702</span></a>
+                </article>
+                <article class="contribution-card">
+                    <div class="contribution-topline"><span class="work-area">Evaluation correctness</span><span class="work-status">Open PR</span></div>
+                    <h3>RAG-Gym <span class="work-number">#6</span></h3>
+                    <p class="contribution-summary">More reliable<br>answer evaluation</p>
+                    <p>The evaluator could extract A from “Answer choice: D.” The submitted fix prioritizes explicit answer formats and narrows the fallback to a unique standalone label.</p>
+                    <div class="evidence-line">7 CPU tests passed · CLI regression coverage</div>
+                    <details><summary>Technical overview</summary><div class="contribution-notes"><p><strong>Cause:</strong> an unconditional regex selected the first capital A/B/C/D anywhere in the response.</p><p><strong>Change:</strong> recognize bare labels, retain structured patterns, and use a unique standalone-letter fallback.</p><p><strong>Evidence:</strong> failing baseline tests, passing unit and CLI tests, and open-ended QA controls.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/RAG-Gym/RAG-Gym/pull/6">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for RAG-Gym #6</span></a>
+                </article>
+                <article class="contribution-card contribution-card--issue">
+                    <div class="contribution-topline"><span class="work-area">Adapter correctness</span><span class="work-status work-status--issue">Open issue</span></div>
+                    <h3>Hugging Face PEFT <span class="work-number">#4133</span></h3>
+                    <p class="contribution-summary">Layer selection<br>in adapter merging</p>
+                    <p>Weighted merging can inherit the first adapter's targeting filters and omit another adapter's layers. Reversing source order changes which layers survive.</p>
+                    <div class="evidence-line">18 CPU reproduction cases · LoRA &amp; IA³</div>
+                    <details><summary>Technical overview</summary><div class="contribution-notes"><p><strong>Cause:</strong> combined configurations retain the first source's exclusion filters; LoRA layer-index filters are affected too.</p><p><strong>Evidence:</strong> LoRA and IA³ toy-model cases, save/reload checks, and a tiny random Llama reproduction.</p><p><strong>Proposal:</strong> preserve the source-target union or explicitly reject incompatible filters, subject to maintainer guidance.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/huggingface/peft/issues/4133">Read issue &amp; reproduction <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+            <div class="carousel-controls" hidden>
+                <p class="carousel-status" aria-live="polite" aria-atomic="true"></p>
+                <div class="carousel-dots" aria-label="Choose contribution page"></div>
+                <div class="carousel-arrows">
+                    <button class="carousel-arrow" type="button" data-carousel="previous" aria-label="Previous contributions" aria-controls="contribution-track"><span aria-hidden="true">←</span></button>
+                    <button class="carousel-arrow" type="button" data-carousel="next" aria-label="Next contributions" aria-controls="contribution-track"><span aria-hidden="true">→</span></button>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Industry experience</p><h2 class="section-title">Engineering in practice.</h2></div><p class="section-intro">Enterprise AI assistants, domain-aware evaluation, and full-stack software systems.</p></div>
+        <div class="experience-records">
+          <article class="experience-record">
+            <div class="record-meta"><span>Feb 2024 — Present</span><span>Software Development Engineer</span></div>
+            <div><h3>IQVIA</h3><p class="role-focus">Enterprise LLM assistants · Life-sciences analytics</p>
+              <p>I translate domain requirements, client feedback, and data semantics into prompts, agent instructions, and behavioral constraints.</p>
+              <ul class="editorial-list">
+                <li>Design and refine system prompts; investigate failure cases and validate responses against business rules and domain documentation.</li>
+                <li>Work on prompt configuration, behavior analysis, and evaluation within LangChain/LangGraph-based systems, with LangSmith for observability.</li>
+                <li>Previously developed cloud storage, document management, authentication, and security features using .NET Core, Angular, PostgreSQL, and AWS S3.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="experience-record">
+            <div class="record-meta"><span>Jun 2023 — Jan 2024</span><span>Software Engineer I</span></div>
+            <div><h3>Enosis Solutions</h3><p class="role-focus">Full-stack engineering · E-learning</p>
+              <p>Contributed to an education platform using ASP.NET Core, Angular, and SQL Server, building application modules, improving performance, and resolving reliability issues.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="news" aria-labelledby="news-title">
+        <div class="container news-layout">
+            <div>
+                <p class="eyebrow">Along the way</p>
+                <h2 id="news-title" class="section-title">News &amp; milestones</h2>
+                <p class="section-intro">Research, engineering, and the steps in between.</p>
+                <p class="news-scroll-hint">Latest first <span aria-hidden="true">·</span> Scroll for earlier updates <span aria-hidden="true">↓</span></p>
+            </div>
+            <div class="news-scroll-panel" role="region" aria-label="Career and research updates" tabindex="0">
+            <ol class="news-list">
+                <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/RAG-Gym/RAG-Gym/pull/6">RAG-Gym: improving multiple-choice evaluation <span aria-hidden="true">↗</span></a><p>Fixing answer extraction that could both reject correct responses and reward incorrect ones.</p></div></li>
+                <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Issue reported</span><a href="https://github.com/huggingface/peft/issues/4133">PEFT: investigating lost adapter layers <span aria-hidden="true">↗</span></a><p>A CPU reproduction of source-order-dependent weighted merging in LoRA and IA³.</p></div></li>
+                <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/microsoft/agent-lightning/pull/702">Agent Lightning: validating training rewards <span aria-hidden="true">↗</span></a><p>Checking reward finiteness before conversion to training tensors.</p></div></li>
+                <li><time datetime="2026-11-07">07 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/HKUDS/LightRAG/pull/4312">LightRAG: making interrupted deletions visible <span aria-hidden="true">↗</span></a><p>Tracking deletion state so partially deleted documents remain visible and retryable.</p></div></li>
+                <li><time datetime="2026-05">May 2026</time><div><span class="news-kind">Research</span><a href="histopathology-fairness-review-draft.pdf">Contributed to a review of fairness in pathology AI <span aria-hidden="true">↗</span></a><p>Collaborative systematic review covering 78 studies, bias sources, evaluation practices, and reporting recommendations.</p></div></li>
+                <li><time datetime="2024-02">Feb 2024</time><div><span class="news-kind">Career</span><a href="#experience">Joined IQVIA <span aria-hidden="true">↗</span></a><p>Started as a Software Development Engineer, working on enterprise software and, subsequently, LLM-powered assistants.</p></div></li>
+                <li><time datetime="2023-07-01">01 Jul 2023</time><div><span class="news-kind">Paper acceptance</span><a href="#publications">Our code-review analytics paper accepted at ESEM 2023 <span aria-hidden="true">↗</span></a><p>“Towards Automated Classification of Code Review Feedback to Support Analytics” received full acceptance.</p></div></li>
+                <li><time datetime="2023-06-28">28 Jun 2023</time><div><span class="news-kind">Research milestone</span><a href="#publications">Revised ESEM manuscript submitted <span aria-hidden="true">↗</span></a><p>The revised manuscript and response to reviewers were submitted following conditional acceptance.</p></div></li>
+                <li><time datetime="2023-06">Jun 2023</time><div><span class="news-kind">Career</span><a href="#experience">Joined Enosis Solutions <span aria-hidden="true">↗</span></a><p>Started as a Software Engineer I, contributing to an e-learning platform with ASP.NET Core, Angular, and SQL Server.</p></div></li>
+                <li><time datetime="2022-02">Feb 2022</time><div><span class="news-kind">Research</span><a href="#research">Began undergraduate research at BUET <span aria-hidden="true">↗</span></a><p>Explored NLP and code representations for code-review feedback classification, supervised by Dr Anindya Iqbal.</p></div></li>
+            </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-editorial">
+        <div><p class="eyebrow">About</p><h2 class="section-title">Ovi Poddar</h2>
+          <p class="about-lead">A software engineer with a research background in NLP and software engineering.</p>
+          <p>I work at the intersection of LLM behavior, domain requirements, and evaluation. Alongside my work at IQVIA, I build projects in RAG, parameter-efficient fine-tuning, and agentic systems.</p>
+          <p>My research interests span applied LLMs, agentic AI, NLP, and trustworthy AI. I am interested in PhD opportunities that connect these areas with practical, reliable systems.</p>
+          <a href="CV_Ovi_Poddar.pdf" class="publication-link" download>Download CV <span aria-hidden="true">↗</span></a>
+        </div>
+        <aside class="education-note" aria-label="Education">
+          <p class="eyebrow">Education</p><h3>Bangladesh University of Engineering and Technology</h3>
+          <p>BSc in Computer Science &amp; Engineering</p><p class="education-grade">3.61 <span>/ 4.00 CGPA</span></p>
+          <a class="publication-link" href="#publications">Research publication <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+          <p class="eyebrow">Capabilities</p><h2 class="section-title">Technical toolkit.</h2>
           <div class="skills-grid">
 
             <div class="skill-category skill-category--genai">
@@ -781,10 +714,9 @@
         </div>
       </section>
 
-     <!-- Achievements Section -->
-     <section id="achievements" class="achievements">
+    <section id="achievements" class="achievements">
          <div class="container">
-             <h2 class="section-title">Awards & Achievements</h2>
+             <p class="eyebrow">Recognition</p><h2 class="section-title">Awards &amp; achievements.</h2>
              <div class="achievements-grid">
                  <div class="achievement-item">
                      <div class="achievement-icon">
@@ -792,7 +724,7 @@
                      </div>
                      <h3>Dean's List Award — BUET</h3>
                      <p>
-                         Awarded the <strong>Dean's List</strong> distinction at BUET for maintaining a 
+                         Awarded the <strong>Dean's List</strong> distinction at BUET for maintaining a
                          <strong>CGPA of 3.75 or higher</strong> across all semesters of Level-2.
                      </p>
                  </div>
@@ -802,7 +734,7 @@
                      </div>
                      <h3>Competitive Programming</h3>
                      <p>
-                         Solved <strong>2500+ problems</strong> on Codeforces, LeetCode, and other platforms, 
+                         Solved <strong>2500+ problems</strong> on Codeforces, LeetCode, and other platforms,
                          demonstrating expertise in algorithms, data structures, and optimized problem-solving.
                      </p>
                      <div class="achievement-links">
@@ -820,7 +752,7 @@
                      </div>
                      <h3>Silver Award at IQVIA</h3>
                      <p>
-                         Recognized for delivering higher-than-expected contributions, taking ownership 
+                         Recognized for delivering higher-than-expected contributions, taking ownership
                          in the absence of a tech lead, and ensuring stability and timely feature delivery.
                      </p>
                  </div>
@@ -830,7 +762,7 @@
                      </div>
                      <h3>Talent Pool Scholarship</h3>
                      <p>
-                         Awarded the Talent Pool Scholarship in both Secondary and Higher Secondary 
+                         Awarded the Talent Pool Scholarship in both Secondary and Higher Secondary
                          Examinations in Bangladesh for outstanding academic performance.
                      </p>
                  </div>
@@ -838,57 +770,22 @@
          </div>
      </section>
 
-     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm always interested in discussing new opportunities, 
-                        research collaborations, or just having a conversation about technology.
-                    </p>
-                    <p class="contact-note">
-                        Feel free to reach out to me through any of the channels below. 
-                        I typically respond within 24 hours.
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:ovipdr.202575@gmail.com">ovipdr.202575@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+8801521114325">+8801521114325</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Dhaka, Bangladesh</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ovi-poddar-45b9051a8/" class="social-link" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Ovi-Poddar" class="social-link" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?hl=en&user=NfRp450AAAAJ&view_op=list_works&gmla=APjjwuaCGRQZn7-0sZhC0P6h1ldqN0WXAK3712m2MTbwCIoWnO5iTSx_GDROh-wABEoyGWWyrA67zxTuiZW-MO78" class="social-link" title="Google Scholar" target="_blank">
-                            <img src="https://img.icons8.com/?size=100&id=KHBsYEIMZ6qt&format=png&color=FFFFFF" alt="Google Scholar">
-                        </a>
-                        <a href="https://codeforces.com/profile/Jerry_Mouse" class="social-link" title="Codeforces">
-                            <i class="fas fa-code"></i>
-                        </a>
-                        <a href="https://leetcode.com/u/Ovi_pdr/" class="social-link" title="LeetCode">
-                            <i class="fas fa-trophy"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="container contact-editorial">
+        <div><p class="eyebrow">Contact</p><h2 class="section-title">Let's talk research<br>&amp; engineering.</h2><p class="section-intro">For research collaborations, PhD opportunities, and conversations about applied AI.</p></div>
+        <div class="contact-channels">
+          <a href="mailto:ovipdr.202575@gmail.com" class="contact-email">ovipdr.202575@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-professional-links">
+            <a href="https://www.linkedin.com/in/ovi-poddar-45b9051a8/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Ovi-Poddar" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.com/citations?user=NfRp450AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="contact-location">Dhaka, Bangladesh · <a href="tel:+8801521114325">+8801521114325</a></p>
         </div>
+      </div>
     </section>
 
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
@@ -902,6 +799,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20261108-2"></script>
 </body>
 </html>
