@@ -510,7 +510,7 @@
                 <div><p class="eyebrow">Open source</p><h2 id="contributions-title" class="section-title">Open-source contributions</h2></div>
                 <p class="section-intro">Work on evaluation correctness, training reliability, retrieval systems, and parameter-efficient fine-tuning.</p>
             </div>
-            <p class="status-snapshot"><time datetime="2026-11-09">November 2026</time> · 5 open pull requests · 1 open issue</p>
+            <p class="status-snapshot"><time datetime="2026-11-10">November 2026</time> · 6 open pull requests · 1 open issue</p>
             <div class="contribution-carousel" role="region" aria-roledescription="carousel" aria-label="Open-source contributions">
             <div class="contribution-grid contribution-track" id="contribution-track" tabindex="0" aria-label="Contribution cards">
                 <article class="contribution-card">
@@ -555,14 +555,14 @@
                     <details><summary>Technical overview</summary><div class="contribution-notes"><p><strong>Cause:</strong> an unconditional regex selected the first capital A/B/C/D anywhere in the response.</p><p><strong>Change:</strong> recognize bare labels, retain structured patterns, and use a unique standalone-letter fallback.</p><p><strong>Evidence:</strong> failing baseline tests, passing unit and CLI tests, and open-ended QA controls.</p></div></details>
                     <a class="contribution-link" href="https://github.com/RAG-Gym/RAG-Gym/pull/6">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for RAG-Gym #6</span></a>
                 </article>
-                <article class="contribution-card contribution-card--issue">
-                    <div class="contribution-topline"><span class="work-area">Adapter correctness</span><span class="work-status work-status--issue">Open issue</span></div>
-                    <h3>Hugging Face PEFT <span class="work-number">#4133</span></h3>
+                <article class="contribution-card">
+                    <div class="contribution-topline"><span class="work-area">Adapter correctness</span><span class="work-status">Open PR</span></div>
+                    <h3>Hugging Face PEFT <span class="work-number">#4142</span></h3>
                     <p class="contribution-summary">Layer selection<br>in adapter merging</p>
-                    <p>Weighted merging can inherit the first adapter's targeting filters and omit another adapter's layers. Reversing source order changes which layers survive.</p>
-                    <div class="evidence-line">18 CPU reproduction cases · LoRA &amp; IA³</div>
-                    <details><summary>Technical overview</summary><div class="contribution-notes"><p><strong>Cause:</strong> combined configurations retain the first source's exclusion filters; LoRA layer-index filters are affected too.</p><p><strong>Evidence:</strong> LoRA and IA³ toy-model cases, save/reload checks, and a tiny random Llama reproduction.</p><p><strong>Proposal:</strong> preserve the source-target union or explicitly reject incompatible filters, subject to maintainer guidance.</p></div></details>
-                    <a class="contribution-link" href="https://github.com/huggingface/peft/issues/4133">Read issue &amp; reproduction <span aria-hidden="true">↗</span></a>
+                    <p>Weighted merging can inherit the first adapter's exclusion filters and drop layers from another source. The submitted fix preserves the layers each source actually adapts.</p>
+                    <div class="evidence-line">8 CPU regression cases · LoRA &amp; IA³</div>
+                    <details><summary>Technical overview</summary><div class="contribution-notes"><p>A PEFT maintainer <a href="https://github.com/huggingface/peft/issues/4133#issuecomment-6747749027">approved work on the fix</a>.</p><p>Tests cover both source orders, list and regex exclusions, and saving and reloading the combined adapter. Existing LoRA and IA³ checkpoints produced identical outputs before and after the change in three CPU dtypes.</p></div></details>
+                    <a class="contribution-link" href="https://github.com/huggingface/peft/pull/4142">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for Hugging Face PEFT #4142</span></a>
                 </article>
             </div>
             <div class="carousel-controls" hidden>
@@ -613,6 +613,7 @@
             </div>
             <div class="news-scroll-panel" role="region" aria-label="Career and research updates" tabindex="0">
             <ol class="news-list">
+                <li><time datetime="2026-11-10">10 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/huggingface/peft/pull/4142">Submitted a fix for weighted adapter merging in PEFT <span aria-hidden="true">↗</span></a><p>Verified the LoRA and IA³ fix in eight CPU regression cases, including saving and reloading the combined adapter.</p></div></li>
                 <li><time datetime="2026-11-09">09 Nov 2026</time><div><span class="news-kind">Open-source evaluation</span><a href="https://github.com/getzep/graphiti/pull/1970#issuecomment-6737433944">Evaluated temporal retrieval in Graphiti <span aria-hidden="true">↗</span></a><p>Ran 21 retrieval cases on Neo4j and reproduced two ways a search can miss a fact that was valid at the requested time.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/RAG-Gym/RAG-Gym/pull/6">RAG-Gym: improving multiple-choice evaluation <span aria-hidden="true">↗</span></a><p>Fixing answer extraction that could both reject correct responses and reward incorrect ones.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Issue reported</span><a href="https://github.com/huggingface/peft/issues/4133">PEFT: investigating lost adapter layers <span aria-hidden="true">↗</span></a><p>A CPU reproduction of source-order-dependent weighted merging in LoRA and IA³.</p></div></li>
