@@ -211,6 +211,9 @@ html:not(.js) .projects-nav { display: none; }
 .achievement-item p { font-size: .82rem; line-height: 1.85; }
 .achievement-links { justify-content: flex-start; }
 .achievement-link { font-size: .7rem; padding: 0; border: 0; background: transparent; }
+.achievement-certificate { display: block; max-width: 280px; margin: 4px 0 14px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.achievement-certificate img { display: block; width: 100%; height: auto; transition: opacity .2s ease; }
+.achievement-certificate:hover img { opacity: .85; }
 .contact-editorial { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 .contact-editorial .section-title { margin-bottom: 22px; }
 .contact-channels { min-width: 0; }

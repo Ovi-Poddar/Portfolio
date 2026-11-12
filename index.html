@@ -6,7 +6,7 @@
     <title>Ovi Poddar | AI Engineering &amp; Applied Research</title>
     <meta name="description" content="Ovi Poddar's work in applied LLMs, agentic systems, NLP, and trustworthy AI. Explore research, engineering projects, and open-source contributions with linked evidence.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="research.css?v=20261108-3">
+    <link rel="stylesheet" href="research.css?v=20261112-1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -85,6 +85,15 @@
           </div>
         </div>
         <div class="research-records">
+          <article class="research-record">
+            <div class="record-meta"><span>2026</span><span class="research-status">Ongoing research</span></div>
+            <div>
+              <h3>Faithful hierarchical summarization of clinical notes</h3>
+              <p>Investigating how large language models can organize long, unstructured clinical text into multi-level summaries that clinicians and researchers can explore, from individual patient findings up to broader patterns across a cohort. Working with MIMIC-IV discharge notes from a heart-failure cohort of 824 patients.</p>
+              <p>The focus is faithfulness: whether each generated summary is actually supported by the underlying notes. Built a claim-level evaluation that checks summaries against source evidence, and used it to find where quality degrades as summaries become more abstract. Now scaling the study with open-weight LLMs on university HPC clusters.</p>
+              <p class="record-credit">With Prof. Haw-Shiuan Chang (University of Arizona) · October 2026–Present</p>
+            </div>
+          </article>
           <article class="research-record">
             <div class="record-meta"><span>2026</span><span class="research-status">Manuscript in preparation</span></div>
             <div>
@@ -609,7 +618,9 @@
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/RAG-Gym/RAG-Gym/pull/6">RAG-Gym: improving multiple-choice evaluation <span aria-hidden="true">↗</span></a><p>Fixing answer extraction that could both reject correct responses and reward incorrect ones.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Issue reported</span><a href="https://github.com/huggingface/peft/issues/4133">PEFT: investigating lost adapter layers <span aria-hidden="true">↗</span></a><p>A CPU reproduction of source-order-dependent weighted merging in LoRA and IA³.</p></div></li>
                 <li><time datetime="2026-11-07">07 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/HKUDS/LightRAG/pull/4312">LightRAG: making interrupted deletions visible <span aria-hidden="true">↗</span></a><p>Tracking deletion state so partially deleted documents remain visible and retryable.</p></div></li>
+                <li><time datetime="2026-10">Oct 2026</time><div><span class="news-kind">Research</span><a href="#research">Began research on faithful summarization of clinical notes <span aria-hidden="true">↗</span></a><p>Studying how LLMs summarize MIMIC-IV discharge notes at multiple levels of abstraction, with Prof. Haw-Shiuan Chang (University of Arizona).</p></div></li>
                 <li><time datetime="2026-05">May 2026</time><div><span class="news-kind">Research</span><a href="histopathology-fairness-review-draft.pdf">Contributed to a review of fairness in pathology AI <span aria-hidden="true">↗</span></a><p>Collaborative systematic review covering 78 studies, bias sources, evaluation practices, and reporting recommendations.</p></div></li>
+                <li><time datetime="2025-08-25">25 Aug 2025</time><div><span class="news-kind">Recognition</span><a href="iqvia-impact-program-silver.png" target="_blank" rel="noopener noreferrer">Received Silver in the IQVIA Impact Program <span aria-hidden="true">↗</span></a><p>Recognized by my manager, Sonu Varma, for stepping up while the tech lead role was vacant, keeping the core platform stable and delivering critical features and fixes on schedule for client releases.</p></div></li>
                 <li><time datetime="2024-02">Feb 2024</time><div><span class="news-kind">Career</span><a href="#experience">Joined IQVIA <span aria-hidden="true">↗</span></a><p>Started as a Software Development Engineer, working on enterprise software and, subsequently, LLM-powered assistants.</p></div></li>
                 <li><time datetime="2023-07-01">01 Jul 2023</time><div><span class="news-kind">Paper acceptance</span><a href="#publications">Our code-review analytics paper accepted at ESEM 2023 <span aria-hidden="true">↗</span></a><p>“Towards Automated Classification of Code Review Feedback to Support Analytics” received full acceptance.</p></div></li>
                 <li><time datetime="2023-06-28">28 Jun 2023</time><div><span class="news-kind">Research milestone</span><a href="#publications">Revised ESEM manuscript submitted <span aria-hidden="true">↗</span></a><p>The revised manuscript and response to reviewers were submitted following conditional acceptance.</p></div></li>
@@ -638,7 +649,7 @@
 
     <section id="skills" class="skills">
         <div class="container">
-          <p class="eyebrow">Capabilities</p><h2 class="section-title">Technical toolkit.</h2>
+          <div class="section-heading"><div><p class="eyebrow">Capabilities</p><h2 class="section-title">Technical toolkit.</h2></div><p class="section-intro">Tools and methods I use across LLM applications, machine learning, and full-stack engineering.</p></div>
           <div class="skills-grid">
 
             <div class="skill-category skill-category--genai">
@@ -723,7 +734,7 @@
 
     <section id="achievements" class="achievements">
          <div class="container">
-             <p class="eyebrow">Recognition</p><h2 class="section-title">Awards &amp; achievements.</h2>
+             <div class="section-heading"><div><p class="eyebrow">Recognition</p><h2 class="section-title">Awards &amp; achievements.</h2></div><p class="section-intro">Recognition from industry, academics, and competitive programming.</p></div>
              <div class="achievements-grid">
                  <div class="achievement-item">
                      <div class="achievement-icon">
@@ -757,11 +768,19 @@
                      <div class="achievement-icon">
                          <i class="fas fa-medal"></i>
                      </div>
-                     <h3>Silver Award at IQVIA</h3>
+                     <h3>Silver — IQVIA Impact Program</h3>
                      <p>
-                         Recognized for delivering higher-than-expected contributions, taking ownership
-                         in the absence of a tech lead, and ensuring stability and timely feature delivery.
+                         Recognized by my manager in August 2025 for higher-than-expected contributions, taking ownership
+                         while the tech lead role was vacant, and keeping the core platform stable with timely feature delivery.
                      </p>
+                     <a href="iqvia-impact-program-silver.png" class="achievement-certificate" target="_blank" rel="noopener noreferrer">
+                         <img src="iqvia-impact-program-silver.png" alt="IQVIA Impact Program Silver certificate awarded to Ovi Poddar" loading="lazy" width="1521" height="1180">
+                     </a>
+                     <div class="achievement-links">
+                         <a href="iqvia-impact-program-silver.png" class="achievement-link" target="_blank" rel="noopener noreferrer">
+                             <i class="fas fa-image"></i> View certificate
+                         </a>
+                     </div>
                  </div>
                  <div class="achievement-item">
                      <div class="achievement-icon">
