@@ -508,9 +508,9 @@
         <div class="container">
             <div class="section-heading">
                 <div><p class="eyebrow">Open source</p><h2 id="contributions-title" class="section-title">Open-source contributions</h2></div>
-                <p class="section-intro">Work on evaluation correctness, training reliability, retrieval systems, and parameter-efficient fine-tuning.</p>
+                <p class="section-intro">Work on evaluation correctness, retrieval systems, and parameter-efficient fine-tuning.</p>
             </div>
-            <p class="status-snapshot"><time datetime="2026-11-10">November 2026</time> · 6 open pull requests · 1 open issue</p>
+            <p class="status-snapshot"><time datetime="2026-11-10">November 2026</time> · 5 open pull requests · 1 open issue</p>
             <div class="contribution-carousel" role="region" aria-roledescription="carousel" aria-label="Open-source contributions">
             <div class="contribution-grid contribution-track" id="contribution-track" tabindex="0" aria-label="Contribution cards">
                 <article class="contribution-card">
@@ -536,15 +536,6 @@
                     <div class="evidence-line">Deletion lifecycle tests · status &amp; UI changes</div>
                     <details><summary>Technical overview</summary><div class="contribution-notes"><p><strong>Problem:</strong> interrupted cleanup can leave document status inconsistent with stored data.</p><p><strong>Change:</strong> track DELETING state, isolate it from ingestion, preserve it during scans, and expose it in the interface.</p><p><strong>Evidence:</strong> focused deletion lifecycle and frontend tests described in the PR.</p></div></details>
                     <a class="contribution-link" href="https://github.com/HKUDS/LightRAG/pull/4312">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for LightRAG #4312</span></a>
-                </article>
-                <article class="contribution-card">
-                    <div class="contribution-topline"><span class="work-area">Training reliability</span><span class="work-status">Open PR</span></div>
-                    <h3>Agent Lightning <span class="work-number">#702</span></h3>
-                    <p class="contribution-summary">Reward validation<br>for agent training</p>
-                    <p>A value valid as a Python float can become infinity in float32. The submitted change rejects non-finite rewards and out-of-range training values before conversion.</p>
-                    <div class="evidence-line">24 CPU regression cases · training-path checks</div>
-                    <details><summary>Technical overview</summary><div class="contribution-notes"><p><strong>Cause:</strong> a finite value such as 1e40 exceeds float32's finite range.</p><p><strong>Change:</strong> validate rewards and fallbacks, with errors identifying the rollout. Preserve large finite validation metrics.</p><p><strong>Evidence:</strong> boundary cases and a local event-API-to-training-tensor reproduction.</p></div></details>
-                    <a class="contribution-link" href="https://github.com/microsoft/agent-lightning/pull/702">View pull request <span aria-hidden="true">↗</span><span class="sr-only"> for Agent Lightning #702</span></a>
                 </article>
                 <article class="contribution-card">
                     <div class="contribution-topline"><span class="work-area">Evaluation correctness</span><span class="work-status">Open PR</span></div>
@@ -617,7 +608,6 @@
                 <li><time datetime="2026-11-09">09 Nov 2026</time><div><span class="news-kind">Open-source evaluation</span><a href="https://github.com/getzep/graphiti/pull/1970#issuecomment-6737433944">Evaluated temporal retrieval in Graphiti <span aria-hidden="true">↗</span></a><p>Ran 21 retrieval cases on Neo4j and reproduced two ways a search can miss a fact that was valid at the requested time.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/RAG-Gym/RAG-Gym/pull/6">RAG-Gym: improving multiple-choice evaluation <span aria-hidden="true">↗</span></a><p>Fixing answer extraction that could both reject correct responses and reward incorrect ones.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Issue reported</span><a href="https://github.com/huggingface/peft/issues/4133">PEFT: investigating lost adapter layers <span aria-hidden="true">↗</span></a><p>A CPU reproduction of source-order-dependent weighted merging in LoRA and IA³.</p></div></li>
-                <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/microsoft/agent-lightning/pull/702">Agent Lightning: validating training rewards <span aria-hidden="true">↗</span></a><p>Checking reward finiteness before conversion to training tensors.</p></div></li>
                 <li><time datetime="2026-11-07">07 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/HKUDS/LightRAG/pull/4312">LightRAG: making interrupted deletions visible <span aria-hidden="true">↗</span></a><p>Tracking deletion state so partially deleted documents remain visible and retryable.</p></div></li>
                 <li><time datetime="2026-05">May 2026</time><div><span class="news-kind">Research</span><a href="histopathology-fairness-review-draft.pdf">Contributed to a review of fairness in pathology AI <span aria-hidden="true">↗</span></a><p>Collaborative systematic review covering 78 studies, bias sources, evaluation practices, and reporting recommendations.</p></div></li>
                 <li><time datetime="2024-02">Feb 2024</time><div><span class="news-kind">Career</span><a href="#experience">Joined IQVIA <span aria-hidden="true">↗</span></a><p>Started as a Software Development Engineer, working on enterprise software and, subsequently, LLM-powered assistants.</p></div></li>
