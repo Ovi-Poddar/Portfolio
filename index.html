@@ -36,33 +36,33 @@
 
     <main id="main-content" tabindex="-1">
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" aria-labelledby="hero-title">
         <div class="hero-container">
             <div class="hero-content">
-                <p class="eyebrow">Ovi Poddar / Software engineer</p>
-                <h1 class="hero-title">Engineering<br><span class="highlight">reliable AI systems.</span></h1>
-                <p class="hero-subtitle">Applied LLMs, agentic systems &amp; trustworthy AI.</p>
+                <p class="eyebrow">Ovi Poddar · AI engineering &amp; applied research</p>
+                <h1 id="hero-title" class="hero-title">Building and evaluating <span class="highlight">LLM systems</span></h1>
                 <p class="hero-description">
-                    I'm Ovi, a software engineer at IQVIA and a BUET graduate with research experience in NLP. My work connects enterprise LLM assistants with hands-on projects in retrieval, agent workflows, and model fine-tuning.
+                    I’m a software development engineer at IQVIA and a BUET graduate working on LLM applications. My research spans NLP, trustworthy AI, and empirical software engineering, from code-review analytics to faithful clinical summarization.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#research" class="btn btn-primary">Explore my research <span aria-hidden="true">↗</span></a>
+                    <a href="#research" class="btn btn-primary">View research <span aria-hidden="true">↗</span></a>
                     <a href="CV_Ovi_Poddar.pdf" class="btn btn-secondary" download>
-                        <i class="fas fa-download"></i> Download CV
+                        <i class="fas fa-download" aria-hidden="true"></i> Download CV
                     </a>
                 </div>
-                <ul class="focus-list" aria-label="Research interests">
-                    <li>Applied LLMs</li><li>Agentic AI</li><li>RAG</li><li>NLP</li>
-                </ul>
-                <div class="hero-credentials"><a href="#publications">ESEM 2023 publication <span aria-hidden="true">↗</span></a><a href="#experience">Industry experience <span aria-hidden="true">↗</span></a></div>
+                <div class="hero-credentials">
+                    <a href="#publications">ESEM 2023 paper <span aria-hidden="true">↗</span></a>
+                    <a href="#projects">AI projects <span aria-hidden="true">↗</span></a>
+                    <a href="#contributions">Open-source work <span aria-hidden="true">↗</span></a>
+                </div>
             </div>
             <div class="hero-image">
                 <figure class="profile-card">
                     <div class="profile-image">
                         <img src="image.png" alt="Portrait of Ovi Poddar" width="300" height="300">
                     </div>
-                    <figcaption><span class="eyebrow">Dhaka, Bangladesh</span><br>Software engineer · IQVIA<br>Computer Science &amp; Engineering · BUET</figcaption>
+                    <figcaption><span class="eyebrow">Dhaka, Bangladesh</span></figcaption>
                 </figure>
             </div>
         </div>
@@ -89,8 +89,8 @@
             <div class="record-meta"><span>2026</span><span class="research-status">Ongoing research</span></div>
             <div>
               <h3>Faithful hierarchical summarization of clinical notes</h3>
-              <p>Investigating how large language models can organize long, unstructured clinical text into multi-level summaries that clinicians and researchers can explore, from individual patient findings up to broader patterns across a cohort. Working with MIMIC-IV discharge notes from a heart-failure cohort of 824 patients.</p>
-              <p>The focus is faithfulness: whether each generated summary is actually supported by the underlying notes. Built a claim-level evaluation that checks summaries against source evidence, and used it to find where quality degrades as summaries become more abstract. Now scaling the study with open-weight LLMs on university HPC clusters.</p>
+              <p>Investigating how large language models can organize long, unstructured clinical text into multi-level summaries that clinicians and researchers can explore—from individual patient findings to broader cohort-level patterns.</p>
+              <p>Developing evaluation methods to determine whether generated summaries remain supported by their source notes, particularly as information becomes more abstract across hierarchy levels. Experiments use de-identified clinical data and open-weight language models on university research computing infrastructure.</p>
               <p class="record-credit">With <a href="https://ken77921.github.io/" target="_blank" rel="noopener noreferrer">Prof. Haw-Shiuan Chang</a> (University of Arizona) · October 2026–Present</p>
             </div>
           </article>
@@ -619,7 +619,7 @@
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/RAG-Gym/RAG-Gym/pull/6">RAG-Gym: improving multiple-choice evaluation <span aria-hidden="true">↗</span></a><p>Fixing answer extraction that could both reject correct responses and reward incorrect ones.</p></div></li>
                 <li><time datetime="2026-11-08">08 Nov 2026</time><div><span class="news-kind">Issue reported</span><a href="https://github.com/huggingface/peft/issues/4133">PEFT: investigating lost adapter layers <span aria-hidden="true">↗</span></a><p>A CPU reproduction of source-order-dependent weighted merging in LoRA and IA³.</p></div></li>
                 <li><time datetime="2026-11-07">07 Nov 2026</time><div><span class="news-kind">Pull request submitted</span><a href="https://github.com/HKUDS/LightRAG/pull/4312">LightRAG: making interrupted deletions visible <span aria-hidden="true">↗</span></a><p>Tracking deletion state so partially deleted documents remain visible and retryable.</p></div></li>
-                <li><time datetime="2026-10">Oct 2026</time><div><span class="news-kind">Research</span><a href="#research">Began research on faithful summarization of clinical notes <span aria-hidden="true">↗</span></a><p>Studying how LLMs summarize MIMIC-IV discharge notes at multiple levels of abstraction, with Prof. Haw-Shiuan Chang (University of Arizona).</p></div></li>
+                <li><time datetime="2026-10">Oct 2026</time><div><span class="news-kind">Research</span><a href="#research">Began research on faithful summarization of clinical notes <span aria-hidden="true">↗</span></a><p>Studying how LLMs summarize clinical notes at multiple levels of abstraction, with Prof. Haw-Shiuan Chang (University of Arizona).</p></div></li>
                 <li><time datetime="2026-05">May 2026</time><div><span class="news-kind">Research</span><a href="histopathology-fairness-review-draft.pdf">Contributed to a review of fairness in pathology AI <span aria-hidden="true">↗</span></a><p>Collaborative systematic review covering 78 studies, bias sources, evaluation practices, and reporting recommendations.</p></div></li>
                 <li><time datetime="2025-08-25">25 Aug 2025</time><div><span class="news-kind">Recognition</span><a href="iqvia-impact-program-silver.png" target="_blank" rel="noopener noreferrer">Received Silver in the IQVIA Impact Program <span aria-hidden="true">↗</span></a><p>Recognized by my manager, Sonu Varma, for stepping up while the tech lead role was vacant, keeping the core platform stable and delivering critical features and fixes on schedule for client releases.</p></div></li>
                 <li><time datetime="2024-02-01">01 Feb 2024</time><div><span class="news-kind">Career</span><a href="#experience">Joined IQVIA <span aria-hidden="true">↗</span></a><p>Started as a Software Development Engineer, working on enterprise software and, subsequently, LLM-powered assistants.</p></div></li>
@@ -632,12 +632,15 @@
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about" aria-labelledby="about-title">
       <div class="container about-editorial">
-        <div><p class="eyebrow">About</p><h2 class="section-title">Ovi Poddar</h2>
-          <p class="about-lead">A software engineer with a research background in NLP and software engineering.</p>
-          <p>I work at the intersection of LLM behavior, domain requirements, and evaluation. Alongside my work at IQVIA, I build projects in RAG, parameter-efficient fine-tuning, and agentic systems.</p>
-          <p>My research interests span applied LLMs, agentic AI, NLP, and trustworthy AI. I am interested in PhD opportunities that connect these areas with practical, reliable systems.</p>
+        <div>
+          <h2 id="about-title" class="section-title">About me</h2>
+          <p class="about-lead">I build software and study how language models can support people in complex, domain-specific tasks.</p>
+          <p>I’m a software development engineer at IQVIA, working on LLM assistants for life-sciences analytics through prompt design, behavior analysis, and response evaluation. My earlier work at IQVIA covered enterprise application features, storage, and security. Before that, I was a Software Engineer I at Enosis Solutions, building an e-learning platform with ASP.NET Core, Angular, and SQL Server.</p>
+          <p>I graduated in computer science and engineering from BUET, where I co-authored an ESEM 2023 paper applying NLP to code-review feedback classification. My current research with Prof. Haw-Shiuan Chang at the University of Arizona investigates faithful hierarchical summarization of clinical notes. I have also contributed to a systematic review of fairness and bias in pathology AI with Dr Raktim Kumar Mondol at UNSW.</p>
+          <p>In personal projects, I build retrieval pipelines and stateful agents, and compare language models and QLoRA fine-tuning against classical machine-learning baselines. My open-source work addresses evaluation and system reliability, including a merged LightRAG fix for interrupted document deletions and submitted fixes in RAG-Gym, Agent Lightning, and Hugging Face PEFT.</p>
+          <p>I’m interested in PhD research in NLP, trustworthy AI, and empirical software engineering, particularly the reliability of retrieval and tool-using language models, and how AI can support code review and developer workflows.</p>
           <a href="CV_Ovi_Poddar.pdf" class="publication-link" download>Download CV <span aria-hidden="true">↗</span></a>
         </div>
         <aside class="education-note" aria-label="Education">
